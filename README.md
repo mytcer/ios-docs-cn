@@ -28,6 +28,7 @@
 * [UIKit](./framework/UIKit)
 * [WebKit](./framework/WebKit)
 * [CloudKit](./framework/CloudKit)
+* [CoreData](./framework/CoreData)
 
 <br>
 
