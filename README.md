@@ -77,6 +77,13 @@
 	* PushKit
 	* Social
 	* UIAutomation
+* Core OS Layer
+	* [Accelerate](./framework/Accelerate)
+	* [ExternalAccessory](./framework/ExternalAccessory)
+	* [Security](./framework/Security)
+	* [System](./framework/System)
+	* CoreBluetooth
+	* LocalAuthentication
 
 <br>
 
