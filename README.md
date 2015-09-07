@@ -25,7 +25,7 @@
 
 ### 三. 系统框架
 
-* Cocoa Touch层
+* Cocoa Touch Layer
 	* [AddressBookUI](./framework/AddressBookUI)
 	* [EventKitUI](./framework/EventKitUI)
 	* [GameKit](./framework/GameKit)
@@ -33,7 +33,10 @@
 	* [MapKit](./framework/MapKit)
 	* [MessageUI](./framework/MessageUI)
 	* [UIKit](./framework/UIKit)
-* 媒体层
+	* NotificationCenter
+	* PhotosUI
+	* WatchKit
+* 多媒体层
 	* [AssetsLibrary](./framework/AssetsLibrary)
 	* [AVFoundation](./framework/AVFoundation)
 	* [AudioToolbox](./framework/AudioToolbox)
@@ -46,9 +49,34 @@
 	* [MediaPlayer](./framework/MediaPlayer)
 	* [OpenGLES](./framework/OpenGLES)
 	* [QuartzCore](./framework/QuartzCore)
-* [WebKit](./framework/WebKit)
-* [CloudKit](./framework/CloudKit)
-* [CoreData](./framework/CoreData)
+* Core Services Layer
+	* [AddressBook](./framework/AddressBook)
+	* [CFNetwork](./framework/CFNetwork)
+	* [CoreData](./framework/CoreData)
+	* [CoreFoundation](./framework/CoreFoundation)
+	* [CoreLocation](./framework/CoreLocation)
+	* [CoreMedia](./framework/CoreMedia)
+	* [CoreTelephony](./framework/CoreTelephony)
+	* [EventKit](./framework/EventKit)
+	* [Foundation](./framework/Foundation)
+	* [MobileCoreServices](./framework/MobileCoreServices)
+	* [QuickLook](./framework/QuickLook)
+	* [StoreKit](./framework/StoreKit)
+	* [SystemConfiguration](./framework/SystemConfiguration)
+	* [WebKit](./framework/WebKit)
+	* [CloudKit](./framework/CloudKit)
+	* ACAccounts
+	* AdSupport
+	* CoreMotion
+	* HealthKit
+	* HomeKit
+	* JavascriptCore
+	* MultipeerConnectivity
+	* NewsstandKit
+	* PassKit
+	* PushKit
+	* Social
+	* UIAutomation
 
 <br>
 
