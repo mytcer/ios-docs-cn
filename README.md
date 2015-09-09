@@ -47,6 +47,7 @@
 	* [CoreVideo](./framework/CoreVideo)
 	* [ImageIO](./framework/ImageIO)
 	* [MediaPlayer](./framework/MediaPlayer)
+	* [OpenAL](./framework/OpenAL)
 	* [OpenGLES](./framework/OpenGLES)
 	* [QuartzCore](./framework/QuartzCore)
 * Core Services Layer
@@ -65,9 +66,9 @@
 	* [SystemConfiguration](./framework/SystemConfiguration)
 	* [WebKit](./framework/WebKit)
 	* [CloudKit](./framework/CloudKit)
+	* [CoreMotion](./framework/CoreMotion)
 	* ACAccounts
 	* AdSupport
-	* CoreMotion
 	* HealthKit
 	* HomeKit
 	* JavascriptCore
