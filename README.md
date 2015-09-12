@@ -13,7 +13,7 @@
 
 ### 二. 语言
 
-* Objective-C
+* [Objective-C](./objc/readme.md)
 
 * Swift
 
@@ -103,7 +103,13 @@
 
 <br>
 
-### 五. 常用第三方框架/库
+### 五. 优质第三方框架/库
+
+* [Masonry](https://github.com/Masonry/Masonry) -- 自动布局
+* [MJRefresh](https://github.com/CoderMJLee/MJRefresh) -- 上拉下拉刷新
+* [SDWebImage](https://github.com/rs/SDWebImage) -- 图片缓存
+* [SVProgressHUD](https://github.com/samvermette/SVProgressHUD) -- 各种提示层
+* [AFNetworking](https://github.com/AFNetworking/AFNetworking) -- 网络开发
 
 <br>
 
@@ -114,3 +120,4 @@
 ### 六. 优质参考资源
 
 * [iOS技术概览中文版](./resource/iOS技术概览.pdf)
+* [Cocoa编码规范](http://www.cocoachina.com/ios/20150908/13335.html)
