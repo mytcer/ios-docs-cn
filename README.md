@@ -14,8 +14,7 @@
 ### 二. 语言
 
 * [Objective-C](./objc/readme.md)
-
-* Swift
+* [Swift](./objc/readme.md)
 
 <br>
 
@@ -67,11 +66,11 @@
 	* [WebKit](./framework/WebKit)
 	* [CloudKit](./framework/CloudKit)
 	* [CoreMotion](./framework/CoreMotion)
+	* [JavascriptCore](./framework/JavascriptCore)
 	* ACAccounts
 	* AdSupport
 	* HealthKit
 	* HomeKit
-	* JavascriptCore
 	* MultipeerConnectivity
 	* NewsstandKit
 	* PassKit
