@@ -66,7 +66,7 @@
 	* [WebKit](./framework/WebKit)
 	* [CloudKit](./framework/CloudKit)
 	* [CoreMotion](./framework/CoreMotion)
-	* [JavascriptCore](./framework/JavascriptCore)
+	* [JavascriptCore](./framework/JavaScriptCore)
 	* ACAccounts
 	* AdSupport
 	* HealthKit
