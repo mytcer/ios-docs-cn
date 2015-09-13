@@ -14,7 +14,7 @@
 ### 二. 语言
 
 * [Objective-C](./objc/readme.md)
-* [Swift](./objc/readme.md)
+* [Swift](./swift/readme.md)
 
 <br>
 
