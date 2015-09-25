@@ -18,6 +18,7 @@
 
 * 从iOS7开始，用户可以通过轻扫屏幕左侧来弹出最顶层视图控制器。
 * 当前一个视图控制器提供了返回按钮时，如果设置的返回按钮标题过长，为了适应可用空间，实际的标题会被替换为"返回"。
+* 只要在使用了`UINavigationController`且`navigationBar`没有被隐藏的条件下，它的`rootController`及之后push的controller的`preferredStatusBarStyle`方法不会被调用。原因是`UINavigationController`会根据自己`navigationBar`的`barStyle`来决定 StatusBarStyle。
 
 <br>
 
@@ -30,3 +31,5 @@
 * [UINavigationController详解与使用(一)添加UIBarButtonItem](http://blog.csdn.net/totogo2010/article/details/7681879)
 * [UINavigationController详解与使用(二)页面切换和segmentedController](http://blog.csdn.net/totogo2010/article/details/7682433)
 * [UINavigationController详解与使用(三)ToolBar](http://blog.csdn.net/totogo2010/article/details/7682641)
+* [如何正确设置状态栏的风格？](http://bawn.github.io/ios/2014/07/29/UIStatusBarStyle.html)
+* [关于preferredStatusBarStyle方法被重写状态栏字体颜色不变的处理？](http://m13018951428.blog.163.com/blog/static/236322019201491081910593/)

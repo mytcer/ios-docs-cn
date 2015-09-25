@@ -109,6 +109,7 @@
 * [SDWebImage](https://github.com/rs/SDWebImage) -- 图片缓存
 * [SVProgressHUD](https://github.com/samvermette/SVProgressHUD) -- 各种提示层
 * [AFNetworking](https://github.com/AFNetworking/AFNetworking) -- 网络开发
+* [PNChart](https://github.com/kevinzhow/PNChart) -- 图表库
 
 <br>
 
