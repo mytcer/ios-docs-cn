@@ -121,3 +121,13 @@
 
 * [iOS技术概览中文版](./resource/iOS技术概览.pdf)
 * [Cocoa编码规范](http://www.cocoachina.com/ios/20150908/13335.html)
+
+<br>
+
+***
+
+<br>
+
+### 七. 其他优质资源
+
+* [apistore](http://apistore.baidu.com/astore/index) -- 各种开放API的聚集地
