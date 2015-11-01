@@ -131,3 +131,4 @@
 ### 七. 其他优质资源
 
 * [apistore](http://apistore.baidu.com/astore/index) -- 各种开放API的聚集地
+* [如何获取本机的IP地址](http://stackoverflow.com/questions/6807788/how-to-get-ip-address-of-iphone-programatically)
