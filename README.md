@@ -132,3 +132,4 @@
 
 * [apistore](http://apistore.baidu.com/astore/index) -- 各种开放API的聚集地
 * [如何获取本机的IP地址](http://stackoverflow.com/questions/6807788/how-to-get-ip-address-of-iphone-programatically)
+* [UIKeyboardType 11种键盘图片展示](http://jingyan.baidu.com/article/e75aca855a7c03142edac6c9.html)
