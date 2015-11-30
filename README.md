@@ -120,6 +120,7 @@
 ### 六. 优质参考资源
 
 * [iOS技术概览中文版](./resource/iOS技术概览.pdf)
+* [iOS Provisioning Profile(Certificate)与Code Signing详解](http://blog.csdn.net/phunxm/article/details/42685597)
 * [Cocoa编码规范](http://www.cocoachina.com/ios/20150908/13335.html)
 
 <br>
