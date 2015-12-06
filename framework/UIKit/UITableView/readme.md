@@ -26,6 +26,12 @@
 tableView.separatorInset = UIEdgeInsetsZero;
 ```
 
+* 如何去掉表格单元格底部的分割线？
+
+```
+tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+```
+
 * 如何设置表格分组之间的间隔？
 
 ```
