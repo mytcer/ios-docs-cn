@@ -12,4 +12,5 @@
 
 ### 参考资料
 
-* [绘图1-UIBezierPath](http://www.jianshu.com/p/bbb2cc485a45)
+* [UIBezierPath精讲](http://www.henishuo.com/uibezierpath-draw/)
+* [CAShapeLayer精讲](http://www.jianshu.com/p/5f08035056f6)

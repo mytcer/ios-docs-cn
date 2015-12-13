@@ -1,0 +1,5 @@
+# UIDocumentPickerExtensionViewController
+
+### 简介
+
+它是文档选择器视图控制器的扩展，当创建一个文档选择扩展时，你必须子类化`UIDocumentPickerExtensionViewController`来提供文档选择器的用户界面。你的子类提供了一个可用的文档列表和目的地给用户，当用户做出一个选择时，你触发文件传输并将文件的URL返回给主应用程序。
