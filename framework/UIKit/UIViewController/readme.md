@@ -41,6 +41,20 @@
 
 注意：如果视图控制器不是从故事板实例化的，则属性值为`nil`。
 
+
+**`- shouldPerformSegueWithIdentifier:sender:`**
+
+说明：该方法返回一个布尔值，用于决定指定标识符的segue是否应该被执行，YES表示执行，NO表示不执行。
+
+注意：如果你没有实现该方法，所有segue都会被执行。
+
+
+**`- prepareForSegue:sender:`
+
+说明：提醒视图控制器segue即将被执行。
+
+注意：该方法的默认实现什么也没做。
+
 <br>
 ***
 <br>
