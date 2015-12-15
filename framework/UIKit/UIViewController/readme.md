@@ -49,14 +49,14 @@
 注意：如果你没有实现该方法，所有segue都会被执行。
 
 
-**`- prepareForSegue:sender:`
+**`- prepareForSegue:sender:`**
 
 说明：提醒视图控制器segue即将被执行。
 
 注意：该方法的默认实现什么也没做。
 
 
-**`- performSegueWithIdentifier:sender:`
+**`- performSegueWithIdentifier:sender:`**
 
 说明：使用来自当前视图控制器故事板文件中的特定标识符初始化segue。
 
@@ -70,6 +70,26 @@
 注意：
 
 * 当一个解绑动作被触发时，UIKit使用该方法和`viewControllerForUnwindSegueAction:fromViewController:withSender:`方法找到一个合适的视图控制器来处理解绑动作。
+
+
+**`view`**
+
+说明：视图控制器的根视图。
+
+注意：
+
+* 如果访问该属性时，属性值为nil，则视图控制器会自动调用`loadView`方法将根视图载入到内存中，并返回刚载入的视图对象。
+
+* 每个视图控制器是其视图的唯一所有者
+
+* 你不能将同一个视图对象与多个视图控制器对象关联起来，除了视图控制器作为其他视图控制器的容器时，可以将其他视图控制器的视图作为容器视图的子视图，但在将其他视图控制器的视图作为子视图前，容器必须先调用`addChildViewController:`方法将其他视图控制器添加进来以建立父子关系。
+
+
+**`isViewLoaded`**
+
+说明：表示视图控制器的根视图是否已载入到内存中。
+
+注意：在根视图没有载入到内存的情况下访问该属性，并不会导致根视图被加载到内存中。
 
 <br>
 ***
