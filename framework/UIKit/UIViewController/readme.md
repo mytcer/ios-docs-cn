@@ -55,6 +55,22 @@
 
 注意：该方法的默认实现什么也没做。
 
+
+**`- performSegueWithIdentifier:sender:`
+
+说明：使用来自当前视图控制器故事板文件中的特定标识符初始化segue。
+
+注意：当前视图控制器必须已经从故事板载入，如果`storyboard`属性为nil，该方法会抛出异常。
+
+
+**`- canPerformUnwindSegueAction:fromViewController:withSender:`
+
+说明：在一个视图控制器上调用该方法，返回一个布尔值，以决定是否响应解绑动作（导航回退），YES表示视图控制器想处理解绑动作。
+
+注意：
+
+* 当一个解绑动作被触发时，UIKit使用该方法和`viewControllerForUnwindSegueAction:fromViewController:withSender:`方法找到一个合适的视图控制器来处理解绑动作。
+
 <br>
 ***
 <br>
