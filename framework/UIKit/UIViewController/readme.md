@@ -91,6 +91,41 @@
 
 注意：在根视图没有载入到内存的情况下访问该属性，并不会导致根视图被加载到内存中。
 
+
+**`- segueForUnwindingToViewController:fromViewController:identifier:`**
+
+说明：当一个解绑动作需要在两个视图控制器之间过渡时，会调用该方法。
+
+注意：
+
+* 从iOS 9.0开始，该方法已废弃。
+
+* 如果你需要实现一个使用segue解绑的视图控制器容器，那么你需要覆盖此方法，否则就不用覆盖。
+
+
+**`- viewControllerForUnwindSegueAction:fromViewController:withSender:`**
+
+说明：当一个segue解绑动作想从视图控制器容器中搜索一个子视图控制器来处理解绑动作时，调用此方法。
+
+注意：
+
+* 从iOS 9.0开始，该方法已废弃。
+
+* 自定义的视图控制器容器应该覆盖此方法，并且使用此方法来搜索一个子视图控制器来处理解绑动作，这是通过调用每个子视图控制器的`canPerformUnwindSegueAction:fromViewController:withSender:`方法来实现的。如果一个子视图控制器可以处理解绑动作，你应该在该方法中返回该子视图控制器。如果没有子视图控制器想处理解绑动作，就调用父类的该方法并返回其执行结果。
+
+
+**`- loadView`**
+
+说明：创建视图控制器根视图
+
+注意：
+
+* 不要直接调用此方法（在访问`view`属性时，若属性值为nil，视图控制器会自动调用该方法）。
+
+* 如果你使用Interface Builder来创建视图并初始化视图控制器，你必须覆盖此方法。
+
+* 覆盖此方法时，不能调用父类的该方法。
+
 <br>
 ***
 <br>
