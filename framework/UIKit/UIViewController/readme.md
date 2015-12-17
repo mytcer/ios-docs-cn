@@ -186,12 +186,78 @@
 
 注意：如果要改变呈现视图控制器时的过度风格，必须在呈现视图控制器前设置该属性的值。
 
+<br>
+
 
 **`modalInPopover`**
 
 说明：布尔值，表示视图控制器是否应该通过弹窗模式来呈现，默认值为NO。
 
 注意：值设置为YES会导致弹窗控制器被显示后，禁止控制器之外的交互。你可以使用该行为来确保点击弹窗控制器之外的部分时，弹窗不会消失。
+
+<br>
+
+
+**`- showViewController:sender:`**
+
+说明：在一个主要上下文中呈现视图控制器，使用该方法，一个视图控制器不需要知道它是否被嵌入导航控制器或拆分视图控制器内部。
+
+注意：
+
+* 从iOS 8.0开始可用
+
+* 这个方法的默认实现调用`targetViewControllerForAction:sender:`方法，在视图控制器层级结构中定位一个覆盖了`- showViewController:sender:`方法的对象，然后在找到的对象上调用`- showViewController:sender:`方法。
+
+* 如果`targetViewControllerForAction:sender:`方法返回nil，该方法会使用窗口的根视图控制器以模态的方式来呈现`vc`。
+
+<br>
+
+
+**`- showDetailViewController:sender:`**
+
+说明：在一个二级上下文中呈现视图控制器
+
+注意：从iOS 8.0开始可用
+
+<br>
+
+
+**`- presentViewController:animated:completion:`**
+
+说明：以模态呈现一个视图控制器
+
+注意：
+
+* 在横向常规的环境中，视图控制器按照`modalPresentationStyle`属性值描述的风格呈现；在横向紧凑的环境中，视图控制器默认全屏呈现。
+
+* 如果你给被呈现的控制器关联了一个代理，你就可以动态地修改呈现风格。
+
+* 被呈现的视图控制器调用`viewDidAppear:`方法后，才会调用completion回调。
+
+<br>
+
+
+**`- dismissViewControllerAnimated:completion:`**
+
+说明：解散当前视图控制器中以模态呈现的控制器
+
+注意：被呈现的视图控制器调用`viewDidDisappear:`方法后，才会调用completion回调。
+
+<br>
+
+
+**`definesPresentationContext`**
+
+说明：布尔值，用于表示当前视图控制器或其子类呈现一个视图控制器时，它的视图是否被覆盖，默认值为NO。
+
+注意：
+
+* 一些系统提供的视图控制器（如`UINavigationController`），会将默认值设置为YES。
+
+* 当一个基于上下文的呈现发生时，UIKit开始呈现视图控制器并且遍历视图控制器层级，如果UIKit找到一个该属性值为YES的视图控制器，UIKit会要求该视图控制器来呈现新的视图控制器；如果没有视图控制器定义呈现上下文，UIKit会要求窗口的根视图控制器来处理呈现。
+
+<br>
+
 
 <br>
 ***
