@@ -295,6 +295,66 @@
 <br>
 
 
+**`- targetViewControllerForAction:sender:`**
+
+说明：返回处理指定动作的视图控制器，如果没有视图控制器处理该动作，就返回nil。
+
+注意：
+
+* 从iOS 8.0开始可用
+
+* 一个视图控制器可以通过`canPerformAction:withSender:`方法返回一个合适的值，以选择性地响应一个动作。
+
+<br>
+
+
+**`presentationController`**
+
+说明：当前视图控制器最近呈现的控制器
+
+注意：
+
+* 从iOS 8.0开始可用
+
+<br>
+
+
+**`popoverPresentationController`**
+
+说明：当前视图控制器最近呈现的弹窗控制器
+
+注意：
+
+* 从iOS 8.0开始可用
+
+<br>
+
+
+**`- viewWillAppear:`**
+
+说明：通知视图控制器，其视图将要被添加到视图层次结构中。
+
+<br>
+
+
+**`- viewDidAppear:`**
+
+说明：通知视图控制器，其视图已经被添加到视图层次结构中。
+
+<br>
+
+
+**`- viewWillDisappear:`**
+
+说明：通知视图控制器，其视图将要从视图层次结构中移除。
+
+<br>
+
+
+**`- viewDidDisappear:`**
+
+说明：通知视图控制器，其视图已经从视图层次结构中移除。
+
 <br>
 ***
 <br>
