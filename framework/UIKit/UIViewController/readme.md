@@ -259,6 +259,42 @@
 <br>
 
 
+**`providesPresentationContextTransitionStyle`**
+
+说明：布尔值，表示当前视图控制器是否为它呈现的视图控制器指定了过渡风格，默认值为NO。
+
+注意：当值设置为YES时，当前视图控制器的过渡风格会替代掉被呈现的视图控制器的过渡风格；当值为NO时，UIKit会使用被呈现的视图控制器的过渡风格。
+
+<br>
+
+
+**`- disablesAutomaticKeyboardDismissal`**
+
+说明：返回一个布尔值，表示当控件发生改变时，当前输入视图是否自动消失，YES表示禁止自动消失。
+
+注意：当视图控制器的模态呈现风格为`UIModalPresentationFormSheet`时，该方法默认返回YES；其他呈现风格时返回NO。
+
+<br>
+
+
+**`transitioningDelegate`**
+
+说明：代理对象，它提供了过渡动画、交互控制及自定义呈现控制对象。
+
+注意：当视图控制器的`modalPresentationStyle`属性是`UIModalPresentationCustom`时，UIKit使用该代理对象来促进过渡和呈现视图控制器。
+
+<br>
+
+
+**`- transitionCoordinator`**
+
+说明：返回处于活动状态的过渡协调对象
+
+注意：如果你覆盖了该方法，那么首先调用父类的该方法，看看有没有合适的过渡协调器返回，如果有，就返回它。
+
+<br>
+
+
 <br>
 ***
 <br>
