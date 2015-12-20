@@ -356,6 +356,74 @@
 说明：通知视图控制器，其视图已经从视图层次结构中移除。
 
 <br>
+
+
+**`- viewWillLayoutSubviews`**
+
+说明：通知视图控制器，其视图将要对子视图进行布局。
+
+注意：
+
+* 当一个视图的边界发生改变时，视图就会调整其子视图的位置。
+
+* 该方法的默认实现什么也不做
+
+<br>
+
+
+**`- viewDidLayoutSubviews`**
+
+说明：通知视图控制器，其视图已完成对子视图的布局。
+
+注意：该方法的默认实现什么也不做
+
+<br>
+
+
+**`- updateViewConstraints`**
+
+说明：当视图控制器的视图需要更新其约束时，调用该方法。
+
+注意：如果你覆盖了该方法，你的实现必须调用父类的实现。
+
+<br>
+
+
+**`bottomLayoutGuide`**
+
+说明：显示屏幕内容的最低基准限制
+
+<br>
+
+
+**`topLayoutGuide`**
+
+说明：显示屏幕内容的最高基准限制
+
+<br>
+
+
+**`edgesForExtendedLayout`**
+
+说明：指定边缘要延伸的方向，默认值为`UIRectEdgeAll`。
+
+注意：该属性只适用于内嵌在容器中（如`UINavigationController`）的控制器，窗口的根视图控制器不会对这个属性作出反应。
+
+<br>
+
+
+**`extendedLayoutIncludesOpaqueBars`**
+
+说明：布尔值，表示是否扩展布局以包括不透明的条，默认值为NO。
+
+<br>
+
+
+**`automaticallyAdjustsScrollViewInsets`**
+
+说明：布尔值，表明视图控制器是否应该自动调整滚动视图的内层，默认值为YES。
+
+<br>
 ***
 <br>
 
@@ -363,3 +431,4 @@
 ### 参考资料
 
 * [addChildViewController属性介绍(剖析网易新闻标签栏视图切换)](http://blog.csdn.net/hmt20130412/article/details/34523235)
+* [edgesForExtendedLayout](http://blog.csdn.net/cny901111/article/details/26529949)
