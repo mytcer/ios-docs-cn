@@ -424,6 +424,42 @@
 说明：布尔值，表明视图控制器是否应该自动调整滚动视图的内层，默认值为YES。
 
 <br>
+
+
+**`- isMovingFromParentViewController`**
+
+说明：返回一个布尔值，表示当前视图控制器是否处于从父控制器移除的过程中。
+
+注意：仅在`viewWillDisappear:`和`viewDidDisappear:`方法内调用该方法时，才会返回YES。
+
+<br>
+
+
+**`- isMovingToParentViewController`**
+
+说明：返回一个布尔值，表示当前视图控制器是否处于被添加到父控制器的过程中。
+
+注意：仅在`viewWillAppear:`和`viewDidAppear:`方法内调用该方法时，才会返回YES。
+
+<br>
+
+
+**`- isBeingPresented`** 
+
+说明：返回一个布尔值，表示当前视图控制器是否处于被父控制器呈现的过程中。
+
+注意：仅在`viewWillAppear:`和`viewDidAppear:`方法内调用该方法时，才会返回YES。
+
+<br>
+
+
+**`- isBeingDismissed`**
+
+说明：返回一个布尔值，表示当前视图控制器是否处于被父控制器解散的过程中。
+
+注意：仅在`viewWillDisappear:`和`viewDidDisappear:`方法内调用该方法时，才会返回YES。
+
+<br>
 ***
 <br>
 
