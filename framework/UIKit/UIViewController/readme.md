@@ -460,6 +460,64 @@
 注意：仅在`viewWillDisappear:`和`viewDidDisappear:`方法内调用该方法时，才会返回YES。
 
 <br>
+
+
+**`- shouldAutorotate`**
+
+说明：返回一个布尔值，表示当前视图控制器的内容是否应该自动旋转，默认返回YES。
+
+<br>
+
+
+**`- supportedInterfaceOrientations`**
+
+说明：返回当前视图控制器支持的所有界面方向，默认值是`UIInterfaceOrientationMaskAll`（for ipad）和`UIInterfaceOrientationMaskAllButUpsideDown`（for iphone）。
+
+注意：
+
+* 当用户改变了设备方向时，系统会调用根视图控制器或最顶层的视图控制器的该方法，如果视图控制器支持新方向，窗口和视图控制器会旋转新方向。
+
+* 仅当`shouldAutorotate`方法返回YES时，才会调用该方法。
+
+<br>
+
+
+**`- preferredInterfaceOrientationForPresentation`**
+
+说明：返回呈现视图控制器时所使用的界面方向
+
+注意：
+
+* 当全屏呈现视图控制器时，系统会调用该方法。
+
+* 如果视图控制器实现了该方法，视图控制器视图使用首选的方向来显示；如果视图控制器没有实现该方法，系统使用状态条的当前方向来显示。
+
+<br>
+
+
+**`+ attemptRotationToDeviceOrientation`**
+
+说明：尝试将所有窗口的方向旋转成设备的当前方向
+
+<br>
+
+
+**`- collapseSecondaryViewController:forSplitViewController:`**
+
+说明：当一个拆分视图控制器过渡到紧凑的宽度尺寸时，调用该方法。
+
+注意：从iOS 8.0开始可用
+
+<br>
+
+
+**`- separateSecondaryViewControllerForSplitViewController:`**
+
+说明：当一个拆分视图控制器过渡到正常的宽度尺寸时，调用该方法。
+
+注意：从iOS 8.0开始可用
+
+<br>
 ***
 <br>
 
