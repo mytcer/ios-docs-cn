@@ -562,6 +562,47 @@
 <br>
 
 
+**`- shouldAutomaticallyForwardAppearanceMethods`**
+
+说明：返回一个布尔值，表示外观方法是否转发给了子视图控制器，该方法的默认实现返回YES。
+
+注意：如果你覆盖了该方法且返回NO，你就要负责在子视图控制器的视图将要出现或消失时通知子控制器，这是通过调用子视图控制器的`beginAppearanceTransition:animated:`和`endAppearanceTransition`方法实现的。
+
+<br>
+
+
+**`- beginAppearanceTransition:animated:`**
+
+说明：告诉子控制器，它的外观即将改变。
+
+<br>
+
+
+**`- endAppearanceTransition`**
+
+说明：告诉子控制器，它的外观已经改变。
+
+<br>
+
+
+**`- setOverrideTraitCollection:forChildViewController:`**
+
+说明：改变分配给指定子视图控制器的特征
+
+注意：从iOS 8.0开始可用
+
+<br>
+
+
+**`- overrideTraitCollectionForChildViewController:`**
+
+说明：返回一个子视图控制器的特征集合
+
+注意：从iOS 8.0开始可用
+
+<br>
+
+
 <br>
 ***
 <br>
