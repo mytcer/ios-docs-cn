@@ -518,6 +518,51 @@
 注意：从iOS 8.0开始可用
 
 <br>
+
+
+**`childViewControllers`**
+
+说明：只读属性，表示当前视图控制器的子控制器列表。
+
+注意：该属性不包含任何呈现的视图控制器
+
+<br>
+
+
+**`- addChildViewController:`**
+
+说明：给当前视图控制器添加一个子控制器
+
+注意：
+
+* 将子控制器的视图添加父控制器的视图中时，必须先调用该方法，将子控制器添加到父控制器之中，以建立父子关系。
+
+* 如果新的子控制器已经被添加到父控制器中，那么会先从父控制器中移除该子控制器，然后再将其添加到父控制器。
+
+* 如果你覆盖了该方法，就必须调用其父类的实现。
+
+<br>
+
+
+**`- removeFromParentViewController`**
+
+说明：从父控制器中移除当前视图控制器
+
+注意：如果你覆盖了该方法，就必须调用其父类的实现。
+
+<br>
+
+
+**`- transitionFromViewController:toViewController:duration:options:animations:completion:`**
+
+说明：在当前视图控制器的子控制器之间转换，该方法将第二个子视图控制器的视图添加到父控制器的视图层级中，然后执行动画，当动画执行完毕后，就会从父控制器的视图层级中移除第一个子视图控制器的视图。
+
+注意：如果你覆盖了该方法，就必须调用其父类的实现。
+
+<br>
+
+
+<br>
 ***
 <br>
 
@@ -525,4 +570,4 @@
 ### 参考资料
 
 * [addChildViewController属性介绍(剖析网易新闻标签栏视图切换)](http://blog.csdn.net/hmt20130412/article/details/34523235)
-* [edgesForExtendedLayout](http://blog.csdn.net/cny901111/article/details/26529949)
+* [通过edgesForExtendedLayout解决视图上移44pt的问题](http://blog.csdn.net/cny901111/article/details/26529949)
