@@ -670,6 +670,135 @@
 
 <br>
 
+
+**`- didReceiveMemoryWarning`**
+
+说明：当应用收到内存警告时，会调用该方法。
+
+注意：
+
+* 不要直接调用该方法
+
+* 如果你覆盖了该方法，就必须调用父类的实现。
+
+<br>
+
+
+**`restorationIdentifier`**
+
+说明：一个标识符，用来决定视图控制器是否要支持状态恢复，默认值为nil。
+
+<br>
+
+
+**`restorationClass`**
+
+说明：该类负责恢复应用状态时重新创建视图控制器
+
+注意：
+
+* 该类必须遵循`UIViewControllerRestoration`协议
+
+* 如果一个视图控制器有一个关联的restoration class，则状态恢复期间会调用`viewControllerWithRestorationIdentifierPath:coder:`方法，该方法会返回restoration identifier标识的视图控制器；如果你没有给视图控制器指定restoration class，状态恢复引擎会要求应用程序代理提供视图控制器对象。
+
+<br>
+
+
+**`- encodeRestorableStateWithCoder:`**
+
+说明：编码视图控制器的状态相关信息
+
+注意：
+
+* 不要直接调用该方法
+
+<br>
+
+
+**`- decodeRestorableStateWithCoder:`**
+
+说明：解码和恢复视图控制器的状态相关信息
+
+<br>
+
+
+**`- applicationFinishedRestoringState`**
+
+说明：在其他对象解码完成后，系统会调用该方法。
+
+<br>
+
+
+**`extensionContext`**
+
+说明：返回视图控制器的扩展内容
+
+注意：从iOS 8.0开始可用
+
+<br>
+
+
+**`- registerForPreviewingWithDelegate:sourceView:`**
+
+说明：注册一个视图控制器来参与3D触控预览和提交
+
+注意：从iOS 9.0开始可用
+
+<br>
+
+
+**`- unregisterForPreviewingWithContext:`**
+
+说明：通过指定的上下文对象来注销以前注册的视图控制器
+
+注意：
+
+* 上下文对象即调用`registerForPreviewingWithDelegate:sourceView:`方法注册视图控制器时返回的对象
+
+* 当一个已注册的3D触控视图控制器被释放后，系统会自动调用该方法。
+
+<br>
+
+
+**`- previewActionItems`**
+
+说明：返回用户在3D触控预览上向上扫时所显示的快捷操作，默认实现返回一个空数组。
+
+注意：从iOS 9.0开始可用
+
+<br>
+
+
+**`- childViewControllerForStatusBarHidden`**
+
+说明：当系统需要使用视图控制器来决定状态条的隐藏状态时，调用该方法，默认返回nil。
+
+注意：
+
+* 如果该方法返回nil，则状态条的隐藏状态与当前视图控制器一致。
+
+* 如果你改变了该方法的返回值，则需要调用`setNeedsStatusBarAppearanceUpdate`方法。
+
+<br>
+
+
+**`- childViewControllerForStatusBarStyle`**
+
+说明：当系统需要使用视图控制器来决定状态条的风格时，调用该方法。
+
+注意：
+
+* 如果该方法返回nil，则状态条风格与当前视图控制器一致。
+
+* 如果你改变了该方法的返回值，则需要调用`setNeedsStatusBarAppearanceUpdate`方法。
+
+<br>
+
+
+**`- preferredStatusBarStyle`**
+
+说明：视图控制器状态条的首选风格
+
 <br>
 ***
 <br>
