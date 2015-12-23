@@ -603,6 +603,73 @@
 <br>
 
 
+**`- willMoveToParentViewController:`**
+
+说明：在视图控制器被添加父控制器或从父控制器移除之前，调用该方法。
+
+注意：
+
+* 如果你实现了自己的容器控制器，你必须在调用子视图控制器的`removeFromParentViewController`方法之前，调用`willMoveToParentViewController:`方法，参数值使用nil。
+
+* 当你自定义的容器控制器调用`addChildViewController:`方法时，它会在子视图控制器被添加之前，自动调用子视图控制器的`willMoveToParentViewController:`方法。
+
+<br>
+
+
+**`- didMoveToParentViewController:`**
+
+说明：当视图控制器已经被添加到容器控制器，或已从容器控制器中移除时，调用该方法。
+
+注意：
+
+* 如果你实现了自己的容器控制器，你必须在当前控制器与新控制器之间的转换完成后调用`didMoveToParentViewController:`方法；如果没有转换，那么应该在调用`addChildViewController:`方法后立即调用`didMoveToParentViewController:`方法。
+
+* `removeFromParentViewController`方法会自动调用`didMoveToParentViewController:`方法。
+
+<br>
+
+
+**`presentingViewController`**
+
+说明：只读，返回呈现当前视图控制器的控制器
+
+<br>
+
+
+**`presentedViewController`**
+
+说明：只读，返回由当前控制器或视图控制器层级中任一父控制器呈现的视图控制器
+
+<br>
+
+
+**`parentViewController`**
+
+说明：只读，返回接收者的父视图控制器。
+
+<br>
+
+
+**`navigationController`**
+
+说明：只读，返回当前视图控制器的导航控制器。
+
+<br>
+
+
+**`splitViewController`**
+
+说明：只读，返回当前视图控制器的拆分控制器。
+
+<br>
+
+
+**`tabBarController`**
+
+说明：只读，返回当前视图控制器的标签栏控制器。
+
+<br>
+
 <br>
 ***
 <br>
