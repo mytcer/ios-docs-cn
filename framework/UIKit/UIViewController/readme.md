@@ -800,6 +800,83 @@
 说明：视图控制器状态条的首选风格
 
 <br>
+
+
+**`- prefersStatusBarHidden`**
+
+说明：指定视图控制器状态条的显示状态
+
+注意：如果改变了该方法的返回值，则需要调用`setNeedsStatusBarAppearanceUpdate`方法。
+
+<br>
+
+
+**`modalPresentationCapturesStatusBarAppearance`**
+
+说明：布尔值，标明一个非全屏呈现的控制器是否由自己控制状态条的外观。
+
+注意：
+
+* 当你通过`presentViewController:animated:completion:`方法呈现视图控制器时，仅当被呈现控制器的`modalPresentationStyle`属性值是`UIModalPresentationFullScreen`时，其状态条的外观才会由自己控制，而将该属性值设置为YES后，即使视图控制器是非全屏呈现的，也可以由自己控制状态条的外观。
+
+* 当视图控制器全屏呈现时，系统会忽略该属性值。
+
+<br>
+
+
+**`- preferredStatusBarUpdateAnimation`**
+
+说明：指定视图控制器隐藏和显示状态条时使用的动画风格，默认值为`UIStatusBarAnimationFade`。
+
+注意：当你通过`prefersStatusBarHidden`方法改变状态条的显示或隐藏状态时，才会执行动画。
+
+<br>
+
+
+**`- setNeedsStatusBarAppearanceUpdate`**
+
+说明：告诉系统，视图控制器的状态条属性（如显示状态，风格）已经改变。
+
+<br>
+
+
+**`navigationItem`**
+
+说明：只读，导航条上的导航条目
+
+<br>
+
+
+**`hidesBottomBarWhenPushed`**
+
+说明：布尔值，表示当前视图控制器被推入导航控制器时是否显示屏幕底部的工具条。
+
+<br>
+
+
+**`- setToolbarItems:animated:`**
+
+说明：设置显示在视图控制器上的工具条栏目。
+
+<br>
+
+
+**`toolbarItems`**
+
+说明：当前视图控制器的工具条项目
+
+<br>
+
+
+**`tabBarItem`**
+
+说明：标签栏视图控制器的标签栏项目
+
+<br>
+
+
+
+<br>
 ***
 <br>
 
