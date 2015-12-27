@@ -875,6 +875,35 @@
 <br>
 
 
+**`editing`**
+
+说明：布尔值，表示当前视图控制器是否允许用户编辑视图内容。
+
+<br>
+
+
+**`- setEditing:animated:`**
+
+说明：设置视图控制器是否要显示一个可编辑的视图
+
+注意：在更新视图之前，应该先调用父类的实现。
+
+<br>
+
+
+**`- editButtonItem`**
+
+说明：返回一个编辑按钮
+
+注意：该按钮的默认动作会调用`setEditing:animated:`方法
+
+
+**`UIViewControllerShowDetailTargetDidChangeNotification`**
+
+说明：消息，当一个拆分视图控制器被展开或收起时发送。
+
+注意：从iOS 8.0开始可用
+
 
 <br>
 ***
