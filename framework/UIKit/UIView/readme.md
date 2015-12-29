@@ -258,6 +258,29 @@
 <br>
 
 
+**`- exchangeSubviewAtIndex:withSubviewAtIndex:`**
+
+说明：将`subviews`列表中指定索引处的两个子视图互换位置
+
+注意：该方法不会改变子视图的父视图，只是互换一下它们在`subviews`数组中的位置。
+
+<br>
+
+
+**`- isDescendantOfView:`**
+
+说明：返回一个子视图，表示当前视图是否为给定视图的子视图，或是否与给定视图为同一个视图。
+
+<br>
+
+
+**`autoresizingMask`**
+
+说明：它用于决定当父视图的边界改变时，视图如何重新调整自己的大小，默认值为`UIViewAutoresizingNone`（即视图始终不会调整大小）。
+
+<br>
+
+
 <br>
 ***
 <br>
