@@ -502,6 +502,73 @@
 <br>
 
 
+**`constraints`**
+
+说明：只读，返回视图持有的布局约束。
+
+<br>
+
+
+**`- addConstraint:`**
+
+说明：给当前视图或其子视图添加一个布局约束
+
+注意：对于iOS 8.0+，可以通过将约束对象的`active`属性设置为YES来替代该方法，设置为YES后，会自动将约束添加到正确的视图上。
+
+<br>
+
+
+**`- addConstraints:`**
+
+说明：给当前视图或其子视图添加多个布局约束
+
+注意：对于iOS 8.0+，可用使用`NSLayoutConstraint`的`activateConstraints:`方法来替代该方法，它会自动将约束添加到正确的视图上。
+
+<br>
+
+
+**`- removeConstraint:`**
+
+说明：从当前视图中移除指定的布局约束
+
+注意：对于iOS 8.0+，可以通过将约束对象的`active`属性设置为NO来替代该方法，设置为NO后，它会将约束从正确的视图上移除。
+
+<br>
+
+
+**`- removeConstraints:`**
+
+说明：从当前视图或其子视图移除多个布局约束
+
+注意：对于iOS 8.0+，可用使用`NSLayoutConstraint`的`deactivateConstraints:`方法来替代该方法，它会自动将约束从正确的视图上移除。
+
+<br>
+
+
+**`- addLayoutGuide:`**
+
+说明：给视图添加一个指定的UILayoutGuide对象
+
+注意：
+
+* 该方法会将指定的layoutGuide添加到视图的`layoutGuides`数组的末尾
+
+* 当前视图也被赋值给layoutGuide对象的`owningView`属性
+
+* 从iOS 9.0开始可用
+
+<br>
+
+
+**`layoutGuides`**
+
+说明：只读，表示当前视图拥有的UILayoutGuide对象
+
+注意：从iOS 9.0开始可用
+
+<br>
+
+
 <br>
 ***
 <br>
