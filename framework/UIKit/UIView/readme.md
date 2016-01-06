@@ -569,6 +569,20 @@
 <br>
 
 
+**`layoutMarginsGuide`**
+
+说明：只读，它是一个UILayoutGuide对象，表示视图外边距，可以使用这个UILayoutGuide对象的锚点来创建视图的外边距约束。
+
+注意：从iOS 9.0开始可用
+
+<br>
+
+
+**`readableContentGuide`**
+
+说明：只读，它是一个UILayoutGuide对象，用于表示视图内的一个可读宽度区域。
+
+
 <br>
 ***
 <br>
