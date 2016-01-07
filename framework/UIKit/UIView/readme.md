@@ -638,7 +638,7 @@
 
 **`- contentCompressionResistancePriorityForAxis:`**
 
-说明：返回在指定轴线上缩小视图内在大小的优先级
+说明：返回在指定轴线上缩小视图的优先级
 
 注意：
 
@@ -649,13 +649,187 @@
 
 **`- setContentCompressionResistancePriority:forAxis:`**
 
-说明：设置指定轴线上缩小视图内在大小的优先级
+说明：设置在指定轴线上缩小视图的优先级
 
 注意：
 
 * 子类不应该覆盖该方法
 
 <br>
+
+
+**`- contentHuggingPriorityForAxis:`**
+
+说明：返回在指定轴线上放大视图的优先级
+
+<br>
+
+
+**`- setContentHuggingPriority:forAxis:`**
+
+说明：设置在指定轴线上放大视图的优先级
+
+<br>
+
+
+**`- alignmentRectForFrame:`**
+
+说明：返回给定框架的视图对齐矩形
+
+注意：
+
+* 基于约束的布局系统使用对齐矩形来排列视图
+
+* 该方法的默认实现返回被视图的`alignmentRectInsets`属性修改后的视图框架
+
+<br>
+
+
+**`- frameForAlignmentRect:`**
+
+说明：返回给定对齐矩形的视图框架
+
+注意：`- alignmentRectForFrame:`与`- frameForAlignmentRect:`总是互逆的
+
+<br>
+
+
+**`- alignmentRectInsets`**
+
+说明：返回当前视图框架的内边距信息，默认值为`UIEdgeInsetsZero`。
+
+<br>
+
+
+**`viewForBaselineLayout`**
+
+说明：返回一个符合基线约束的视图，默认实现返回当前视图。
+
+注意：
+
+* 如果你覆盖了该方法，则返回的必须是当前视图的子视图。
+
+* 从iOS 9.0开始，该方法已被废弃。
+
+<br>
+
+
+**`viewForFirstBaselineLayout`**
+
+说明：只读，返回一个符合首行基线约束的视图，默认实现返回当前视图。
+
+注意：
+
+* 如果你覆盖了该方法，则返回的必须是当前视图的子视图。
+
+* 该方法从iOS 9.0开始可用
+
+<br>
+
+
+**`viewForLastBaselineLayout`**
+
+说明：只读，返回一个符合尾行基线约束的视图，默认实现返回当前视图。
+
+注意：
+
+* 如果你覆盖了该方法，则返回的必须是当前视图的子视图。
+
+* 该方法从iOS 9.0开始可用
+
+<br>
+
+
+**`- needsUpdateConstraints`**
+
+说明：返回一个布尔值，表示视图的约束是否需要更新，YES表示需要。
+
+<br>
+
+
+**`- setNeedsUpdateConstraints`**
+
+说明：控制视图的约束是否需要更新
+
+注意：
+
+* 当你的自定义视图的某个属性发生变更时，可以调用这个来表明视图的约束需要在将来的某个时候更新，之后系统将会调用`updateConstraints`方法。
+
+<br>
+
+
+**`- updateConstraints`**
+
+说明：更新视图的约束
+
+注意：
+
+* 在约束更新阶段，你不能废止任何约束，也不能唤起布局或绘制。
+
+* 如果你覆盖了该方法，则需要在实现的最后调用父类的实现。
+
+<br>
+
+
+**`- updateConstraintsIfNeeded`**
+
+说明：更新当前视图及其子视图的约束
+
+注意：
+
+* 当视图触发一个新的布局过程后，系统就会自动调用该方法。
+
+* 子类不应该覆盖该方法
+
+<br>
+
+
+**`semanticContentAttribute`**
+
+说明：它是一个视图内容的语义化描述，用于决定当切换左右布局时是否应该翻转视图。
+
+注意：从iOS 9.0开始可用
+
+<br>
+
+
+**`+ userInterfaceLayoutDirectionForSemanticContentAttribute:`**
+
+说明：返回给定语义内容属性的用户界面布局方向（left-to-right or right-to-left）
+
+注意：
+
+* 当创建一个包含子视图的视图时，可以使用该方法来决定子视图是否应该翻转且以适当地顺序布局视图。
+
+* 从iOS 9.0开始可用
+
+<br>
+
+
+**`layoutMargins`**
+
+说明：布局视图内容时所使用的默认间隔，默认值是(8,8,8,8)。
+
+注意：
+
+* 使用该属性来指定视图和任何子视图边缘之间的间隔，自动布局使用你指定的边距来放置内容。
+
+* 当你的视图的边缘接近其父视图的边缘且`preservesSuperviewLayoutMargins`属性值被设置为YES时，实际的布局边距会增加以阻止内容与父视图边距重叠。
+
+* 如果视图是视图控制器的根视图，则由系统来设置和管理`layoutMargins`：顶部和底部被设置为0，两边的边距取决于当前的size class（可能是16或20点），你也无法修改它们。
+
+* 从iOS 8.0开始可用
+
+<br>
+
+
+**`preservesSuperviewLayoutMargins`**
+
+说明：布尔值，表明当前视图是否遵守其父视图的边距，默认值为NO。
+
+注意：
+
+* 从iOS 8.0开始可用
 
 
 <br>
