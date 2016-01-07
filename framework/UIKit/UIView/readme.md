@@ -582,6 +582,81 @@
 
 说明：只读，它是一个UILayoutGuide对象，用于表示视图内的一个可读宽度区域。
 
+注意：
+
+* 从iOS 9.0开始可用
+
+<br>
+
+
+**`- removeLayoutGuide:`**
+
+说明：从视图中删除指定的layoutGuide
+
+注意：
+
+* 该方法会将指定的layoutGuide从视图的`layoutGuides`数组中移除
+
+* 被移除layoutGuide对象的`owningView`属性，其值同时被设置为nil。
+
+* 从iOS 9.0开始可用
+
+<br>
+
+
+**`- systemLayoutSizeFittingSize:`**
+
+说明：返回满足视图持有之约束的尺寸
+
+<br>
+
+
+**`- systemLayoutSizeFittingSize:withHorizontalFittingPriority:verticalFittingPriority:`**
+
+说明：返回满足视图持有之约束的尺寸
+
+注意：
+
+* 从iOS 8.0开始可用
+
+<br>
+
+
+**`- intrinsicContentSize`**
+
+说明：返回视图的自然大小（只考虑视图本身的属性），默认值为`UIViewNoIntrinsicMetric`。
+
+<br>
+
+
+**`- invalidateIntrinsicContentSize`**
+
+说明：废止视图的内在内容大小
+
+<br>
+
+
+**`- contentCompressionResistancePriorityForAxis:`**
+
+说明：返回在指定轴线上缩小视图内在大小的优先级
+
+注意：
+
+* 子类不应该覆盖该方法，而应该在创建自定义视图时设置默认值，通常是`NSLayoutPriorityDefaultLow`或`NSLayoutPriorityDefaultHigh`。
+
+<br>
+
+
+**`- setContentCompressionResistancePriority:forAxis:`**
+
+说明：设置指定轴线上缩小视图内在大小的优先级
+
+注意：
+
+* 子类不应该覆盖该方法
+
+<br>
+
 
 <br>
 ***
@@ -611,3 +686,4 @@
 
 * [对drawRect和setNeedsDisplay的理解](http://blog.csdn.net/jkwmscq/article/details/47020699)
 * [详解UIView的Tint Color属性](http://www.cocoachina.com/ios/20150703/12363.html?utm_medium=referral&utm_source=pulsenews)
+* [细数AutoLayout以来UIView和UIViewController新增的相关API](http://www.cocoachina.com/ios/20141026/10045.html)
