@@ -1020,6 +1020,47 @@
 
 * 动画期间，视图的用户交互会被暂时禁止，如果你想改变这种行为，在options参数值中包含`UIViewAnimationOptionAllowUserInteraction`即可。
 
+<br>
+
+
+**`+ animateKeyframesWithDuration:delay:options:animations:completion:`**
+
+作用：为当前视图设置一个基于关键帧的动画
+
+注意：
+
+* 你必须在animations回调中一次或多次地调用`addKeyframeWithRelativeStartTime:relativeDuration:animations:`方法来添加关键帧动画的时间和数据
+
+* 如果没有添加关键帧动画，那么通过该方法创建的动画就会像标准动画一样执行，即在指定的持续时间内，视图从当前值变成一个新值。
+
+<br>
+
+
+**`+ addKeyframeWithRelativeStartTime:relativeDuration:animations:`**
+
+作用：给一个关键帧动画指定一帧的时间和动画值
+
+<br>
+
+
+**`+ performSystemAnimation:onViews:options:animations:completion:`**
+
+作用：在一个或多个视图上执行执行的系统动画及可选的并行动画（animations参数定义的动画）
+
+<br>
+
+
+**`+ animateWithDuration:delay:usingSpringWithDamping:initialSpringVelocity:options:animations:completion:`**
+
+作用：使用一个对应于物理弹簧运动的时间曲线来执行视图动画
+
+<br>
+
+
+**`+ performWithoutAnimation:`**
+
+作用：禁止一个视图过渡动画
+
 
 <br>
 ***
