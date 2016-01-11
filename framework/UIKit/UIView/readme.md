@@ -893,6 +893,134 @@
 <br>
 
 
+**`- tintColorDidChange`**
+
+说明：当`tintColor`属性发生改变时，系统会调用该方法。
+
+<br>
+
+
+**`- addGestureRecognizer:`**
+
+说明：给视图附加一个手势识别器
+
+注意：视图会建立一个手势识别器的强引用
+
+<br>
+
+
+**`- removeGestureRecognizer:`**
+
+说明：从视图分离一个指定的手势识别器
+
+<br>
+
+
+**`gestureRecognizers`**
+
+说明：返回附加给视图的手势识别器列表，如果视图没有附加手势识别器，则返回一个空数组。
+
+<br>
+
+
+**`- gestureRecognizerShouldBegin:`**
+
+说明：询问视图是否允许手势识别器继续跟踪触摸事件，默认值为YES。
+
+<br>
+
+
+**`+ animateWithDuration:delay:options:animations:completion:`**
+
+说明：使用指定的持续时间、延迟、动画选项及完成回调，来动画改变一个或多个视图。
+
+注意：
+
+* 动画期间，视图的用户交互会被暂时禁止，如果你想改变这种行为，在options参数值中包含`UIViewAnimationOptionAllowUserInteraction`即可。
+
+<br>
+
+
+**`+ animateWithDuration:animations:completion:`**
+
+说明：使用指定的持续时间和完成回调，来动画改变一个或多个视图。
+
+注意：
+
+* 该方法使用`UIViewAnimationOptionCurveEaseInOut`和`UIViewAnimationOptionTransitionNone`动画选项，立即执行指定的动画。
+
+* 动画期间，视图的用户交互会被暂时禁止，如果你想改变这种行为，在options参数值中包含`UIViewAnimationOptionAllowUserInteraction`即可。
+
+例子：
+
+```
+// 渐隐并移除视图
+[UIView animateWithDuration:0.2 animations:^{
+									view.alpha = 0.0;
+								} 
+								completion:^(BOOL finished){ 
+									[view removeFromSuperview]; 
+								}];
+``` 
+
+<br>
+
+
+**`+ animateWithDuration:animations:`**
+
+说明：使用指定的持续时间来动画改变一个或多个视图
+
+注意：
+
+* 该方法使用`UIViewAnimationOptionCurveEaseInOut`和`UIViewAnimationOptionTransitionNone`动画选项，立即执行指定的动画。
+
+* 动画期间，视图的用户交互会被暂时禁止，如果你想改变这种行为，在options参数值中包含`UIViewAnimationOptionAllowUserInteraction`即可。
+
+<br>
+
+
+**`+ transitionWithView:duration:options:animations:completion:`**
+
+说明：为指定的视图容器创建一个过渡动画
+
+注意：
+
+* 如果你想加入其他可以做成动画的变化，你必须在options参数值中包含`UIViewAnimationOptionAllowAnimatedContent`。
+
+* 动画期间，视图的用户交互会被暂时禁止，如果你想改变这种行为，在options参数值中包含`UIViewAnimationOptionAllowUserInteraction`即可。
+
+例子：
+
+```
+// 为containerView创建一个翻转动画
+[UIView transitionWithView:containerView
+           duration:0.2
+           options:UIViewAnimationOptionTransitionFlipFromLeft
+           animations:^{ 
+           		[fromView removeFromSuperview]; 
+           		[containerView addSubview:toView]; 
+           }
+           completion:nil];
+```
+
+<br>
+
+
+**`+ transitionFromView:toView:duration:options:completion:`**
+
+说明：使用指定的参数在指定的视图之间创建过渡动画
+
+注意：
+
+* 该方法只有修改视图层次里的视图
+
+* 它不会以任何方式修改应用的视图控制器
+
+* 动画会立即开始，除非另一个动画正在执行中，在这种情况下，它会在另一个动画执行完毕后立即开始。
+
+* 动画期间，视图的用户交互会被暂时禁止，如果你想改变这种行为，在options参数值中包含`UIViewAnimationOptionAllowUserInteraction`即可。
+
+
 <br>
 ***
 <br>
