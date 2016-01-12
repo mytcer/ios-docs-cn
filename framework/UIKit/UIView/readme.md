@@ -1061,6 +1061,106 @@
 
 作用：禁止一个视图过渡动画
 
+<br>
+
+
+**`- addMotionEffect:`**
+
+说明：开始应用一个动画效果到视图上
+
+<br>
+
+
+**`motionEffects`**
+
+说明：视图的动画效果集合
+
+<br>
+
+
+**`- removeMotionEffect:`**
+
+说明：停止应用一个动画效果到视图
+
+<br>
+
+
+**`restorationIdentifier`**
+
+说明：一个标识符，用于决定视图是否支持状态恢复，默认值为nil。
+
+注意：
+
+* 仅在实现了`encodeRestorableStateWithCoder:`和`decodeRestorableStateWithCoder:`方法时，才可以给该属性赋值。
+
+* 只设置该属性值，不足以确保该视图被保留并恢复，其所属的视图控制器及该视图控制器的所有父控制器，都必须有一个恢复的标识符。
+
+<br>
+
+
+**`- encodeRestorableStateWithCoder:`**
+
+说明：编码视图的状态相关信息
+
+<br>
+
+
+**`- decodeRestorableStateWithCoder:`**
+
+说明：解码视图的状态相关信息
+
+<br>
+
+
+**`- snapshotViewAfterScreenUpdates:`**
+
+说明：返回一个基于当前视图内容的快照视图
+
+<br>
+
+
+**`- resizableSnapshotViewFromRect:afterScreenUpdates:withCapInsets:`**
+
+说明：返回一个基于当前视图指定内容的，带有可伸缩内边距的快照视图。
+
+<br>
+
+
+**`- drawViewHierarchyInRect:afterScreenUpdates:`**
+
+说明：在当前上下文中，将一个快照的完整视图层次结构呈现到可见屏幕上。如果快照是完整的，就返回YES；如果快照丢失了任何视图层级结构中的图像数据，则返回NO。
+
+注意：
+
+* 当你想应用一个图形效果（如模糊）到快照视图时，就使用该方法。
+
+* 该方法没有`snapshotViewAfterScreenUpdates:`方法块
+
+<br>
+
+
+**`tag`**
+
+说明：一个整数，你可以用它来标识应用中的视图对象，默认值为0。
+
+<br>
+
+
+**`- viewWithTag:`**
+
+说明：返回tag值与指定tag值匹配的视图
+
+注意：该方法会搜索指定视图及其所有子视图
+
+<br>
+
+
+**`- convertPoint:toView:`**
+
+说明：将来自当前视图坐标系统中的一个点转换为指定视图坐标系统中的点
+
+<br>
+
 
 <br>
 ***
