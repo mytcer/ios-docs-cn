@@ -124,6 +124,8 @@
 * [iOS Provisioning Profile(Certificate)与Code Signing详解](http://blog.csdn.net/phunxm/article/details/42685597)
 * [Cocoa编码规范](http://www.cocoachina.com/ios/20150908/13335.html)
 * [如何使用TestFlight进行Beta测试](http://www.cocoachina.com/ios/20141022/10009.html)
+* [浅谈iOS消息推送机制](http://jackjia.tk/2015/07/20/ios-push/)
+* [iOS如何创建推送证书](http://jingyan.baidu.com/article/7082dc1c6bb86de40a89bd1a.html)
 
 <br>
 
@@ -134,4 +136,3 @@
 ### 七. 其他优质资源
 
 * [apistore](http://apistore.baidu.com/astore/index) -- 各种开放API的聚集地
-* [UIKeyboardType 11种键盘图片展示](http://jingyan.baidu.com/article/e75aca855a7c03142edac6c9.html)
