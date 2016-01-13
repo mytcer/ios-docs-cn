@@ -38,3 +38,4 @@ UIKit还为下述和设备紧密相连的功能提供支持：
 ### 常用类的API简介（中文）
 
 * [UIViewController](./UIViewController/readme.md)
+* [UIView](./UIView/readme.md)
