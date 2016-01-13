@@ -1,22 +1,125 @@
 # UITableView
 
-**简介**
+### 简介
 
-表格视图
+表格列表视图
+
 
 <br>
-
 ***
+<br>
+
+
+### API
+
+**`- initWithFrame:style:`**
+
+说明：初始化并返回一个拥有指定框架和风格的表格视图对象
+
+注意：
+
+* 当你创建表格视图时，必须指定一个风格。在表格视图创建后，风格是无法修改的。
+
+* 如果你使用继承自`UIView`的`initWithFrame:`方法来初始化表格视图，则其默认风格为`UITableViewStylePlain`。
 
 <br>
+
+
+**`style`**
+
+说明：只读，返回表格视图的风格。
+
+<br>
+
+
+**`- numberOfRowsInSection:`**
+
+说明：返回指定的section中单元格的数量
+
+注意：
+
+* `UITableView`通过其数据源对象的该方法获得单元格的数量，并将其缓存起来。
+
+<br>
+
+
+**`numberOfSections`**
+
+说明：只读，返回表格视图的section数量。
+
+注意：
+
+* `UITableView`通过其数据源对象的该方法获得section的数量，并将其缓存起来。
+
+<br>
+
+
+**`rowHeight`**
+
+说明：可读写，表示每个单元格的高度，默认值为`UITableViewAutomaticDimension`。
+
+注意：
+
+* 高度的单位是点
+
+* 如果你在Interface Builder中创建了一个自我调整大小的单元格，则该单元格的默认高度会调整为在Interface Builder中设置的值。
+
+* 为了取得Interface Builder中创建的自我调整大小的单元格，你必须显示地将`rowHeight`属性值设置为`UITableViewAutomaticDimension`。
+
+* 每当一个表格视图显示时，都会为每个单元格调用表格视图的代理方法`tableView:heightForRowAtIndexPath:`，当单元格数量大于等于1000个时，会导致显著的性能问题。
+
+<br>
+
+
+**`separatorStyle`**
+
+说明：表格单元格分隔线的风格
+
+<br>
+
+
+**`separatorColor`**
+
+说明：表格单元格分割线的颜色，默认为灰色（gray）。
+
+<br>
+
+
+**`separatorEffect`**
+
+说明：应用于表格分割线的效果
+
+注意：从iOS 8.0开始可用
+
+<br>
+
+
+**`backgroundView`**
+
+说明：表格视图的背景视图
+
+注意：
+
+* 表格视图的背景视图会自动调整尺寸，以匹配表格视图的尺寸。
+
+* 背景视图作为表格视图的一个子视图，位于所有单元格、页眉及页脚视图的后面。
+
+* 设置表格视图的背景颜色时，必须将该属性值设置为nil。
+
+<br>
+
+
+<br>
+***
+<br>
+
 
 ### 参考资源
 
 <br>
-
 ***
-
 <br>
+
 
 ### 经验
 
