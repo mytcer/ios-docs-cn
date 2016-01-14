@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>CALayerMask.xcscheme</key>
+		<key>CALayerMaskDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>D3EC12931C47957F00267BE0</key>
+		<key>D3EC12BE1C47B57E00267BE0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

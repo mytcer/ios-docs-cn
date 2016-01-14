@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D3EC12931C47957F00267BE0"
-               BuildableName = "CALayerMask.app"
-               BlueprintName = "CALayerMask"
-               ReferencedContainer = "container:CALayerMask.xcodeproj">
+               BlueprintIdentifier = "D3EC12BE1C47B57E00267BE0"
+               BuildableName = "CALayerMaskDemo.app"
+               BlueprintName = "CALayerMaskDemo"
+               ReferencedContainer = "container:CALayerMaskDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D3EC12931C47957F00267BE0"
-            BuildableName = "CALayerMask.app"
-            BlueprintName = "CALayerMask"
-            ReferencedContainer = "container:CALayerMask.xcodeproj">
+            BlueprintIdentifier = "D3EC12BE1C47B57E00267BE0"
+            BuildableName = "CALayerMaskDemo.app"
+            BlueprintName = "CALayerMaskDemo"
+            ReferencedContainer = "container:CALayerMaskDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D3EC12931C47957F00267BE0"
-            BuildableName = "CALayerMask.app"
-            BlueprintName = "CALayerMask"
-            ReferencedContainer = "container:CALayerMask.xcodeproj">
+            BlueprintIdentifier = "D3EC12BE1C47B57E00267BE0"
+            BuildableName = "CALayerMaskDemo.app"
+            BlueprintName = "CALayerMaskDemo"
+            ReferencedContainer = "container:CALayerMaskDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D3EC12931C47957F00267BE0"
-            BuildableName = "CALayerMask.app"
-            BlueprintName = "CALayerMask"
-            ReferencedContainer = "container:CALayerMask.xcodeproj">
+            BlueprintIdentifier = "D3EC12BE1C47B57E00267BE0"
+            BuildableName = "CALayerMaskDemo.app"
+            BlueprintName = "CALayerMaskDemo"
+            ReferencedContainer = "container:CALayerMaskDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

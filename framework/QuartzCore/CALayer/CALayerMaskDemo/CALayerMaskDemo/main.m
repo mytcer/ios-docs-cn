@@ -1,6 +1,6 @@
 //
 //  main.m
-//  CALayerMask
+//  CALayerMaskDemo
 //
 //  Created by xidanjueying on 16/1/14.
 //  Copyright © 2016年 xidanjueying. All rights reserved.
