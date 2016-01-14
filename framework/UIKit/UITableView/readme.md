@@ -109,6 +109,49 @@
 <br>
 
 
+**`separatorInset`**
+
+说明：指定单元格分割线的默认内边距
+
+注意：
+
+* 从iOS 7开始，单元格分割线不会延伸到表格视图的边缘。
+
+* 只有左右内边距的设置是有效的
+
+例子：
+
+```
+tableView.separatorInset = UIEdgeInsetsMake(0, 3, 0, 11);
+
+```
+<br>
+
+
+**`cellLayoutMarginsFollowReadableWidth`**
+
+说明：布尔值，表示单元格的外边距是否来自于可读内容向导的宽度。
+
+注意：从iOS 9.0开始可用
+
+<br>
+
+
+**`- registerNib:forCellReuseIdentifier:`**
+
+说明：使用指定的单元格重用标识符注册一个包含一个单元格的nib对象
+
+注意：
+
+* `identifier`参数不能是nil或空字符串
+
+* 在使用指定标识符注册时，如果已经存在指定标识符的class或nib对象，且`nib`参数值不为nil，则会使用新的nib对象替代已存在的。
+
+* 你可以通过将`nib`参数值设置为nil，来注销指定标识符的nib对象。
+
+<br>
+
+
 <br>
 ***
 <br>
