@@ -123,6 +123,7 @@
 
 * [iOS技术概览中文版](./resource/iOS技术概览.pdf)
 * [iOS Provisioning Profile(Certificate)与Code Signing详解](http://blog.csdn.net/phunxm/article/details/42685597)
+* [漫谈iOS程序的证书和签名机制](http://www.pchou.info/ios/2015/12/14/ios-certification-and-code-sign.html)
 * [Cocoa编码规范](http://www.cocoachina.com/ios/20150908/13335.html)
 * [如何使用TestFlight进行Beta测试](http://www.cocoachina.com/ios/20141022/10009.html)
 * [浅谈iOS消息推送机制](http://jackjia.tk/2015/07/20/ios-push/)
