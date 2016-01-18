@@ -152,6 +152,28 @@ tableView.separatorInset = UIEdgeInsetsMake(0, 3, 0, 11);
 <br>
 
 
+**`- registerClass:forCellReuseIdentifier:`**
+
+说明：注册一个用于创建新表格单元格的类
+
+注意：
+
+* 在使用指定标识符注册时，如果已经存在指定标识符的class或nib对象，且`cellClass`参数值不为nil，则会使用`cellClass`的参数值替代已存在的。
+
+* 你可以通过将`cellClass`参数值设置为nil，来注销指定标识符的class。
+
+<br>
+
+
+**`- dequeueReusableCellWithIdentifier:forIndexPath:`**
+
+说明：返回一个使用指定标识符的可重用表格单元格视图，并将其添加到表格中。
+
+注意：
+
+* 一个表格视图维护着一个被数据源标记为重用的`UITableViewCell`对象队列
+
+
 <br>
 ***
 <br>
