@@ -139,13 +139,13 @@ tableView.separatorInset = UIEdgeInsetsMake(0, 3, 0, 11);
 
 **`- registerNib:forCellReuseIdentifier:`**
 
-说明：使用指定的单元格重用标识符注册一个包含一个单元格的nib对象
+说明：使用指定的重用标识符注册一个包含一个单元格的nib对象
 
 注意：
 
 * `identifier`参数不能是nil或空字符串
 
-* 在使用指定标识符注册时，如果已经存在指定标识符的class或nib对象，且`nib`参数值不为nil，则会使用新的nib对象替代已存在的。
+* 在使用指定标识符注册时，如果已经存在指定标识符的class或nib对象，且`nib`参数值不为nil，则会使用新的对象替代旧的。
 
 * 你可以通过将`nib`参数值设置为nil，来注销指定标识符的nib对象。
 
@@ -158,7 +158,9 @@ tableView.separatorInset = UIEdgeInsetsMake(0, 3, 0, 11);
 
 注意：
 
-* 在使用指定标识符注册时，如果已经存在指定标识符的class或nib对象，且`cellClass`参数值不为nil，则会使用`cellClass`的参数值替代已存在的。
+* `identifier`参数不能是nil或空字符串
+
+* 在使用指定标识符注册时，如果已经存在指定标识符的class或nib对象，则会使用新的类替代旧的。
 
 * 你可以通过将`cellClass`参数值设置为nil，来注销指定标识符的class。
 
@@ -171,7 +173,65 @@ tableView.separatorInset = UIEdgeInsetsMake(0, 3, 0, 11);
 
 注意：
 
+* `identifier`参数不能是nil或空字符串
+
 * 一个表格视图维护着一个被数据源标记为重用的`UITableViewCell`对象队列
+
+<br>
+
+
+**`- dequeueReusableCellWithIdentifier:`**
+
+说明：通过标识符来返回一个可重用的表格单元格视图
+
+注意：
+
+* `identifier`参数不能是nil
+
+<br>
+
+
+**`- registerNib:forHeaderFooterViewReuseIdentifier:`**
+
+说明：使用指定的重用标识符注册一个包含一个表格视图页眉或页脚的nib对象
+
+注意：
+
+* `identifier`参数不能是nil或空字符串
+
+* 在使用指定标识符注册时，如果已经存在指定标识符的class或nib对象，且`nib`参数值不为nil，则会使用新的对象替代旧的。
+
+* 你可以通过将`nib`参数值设置为nil，来注销指定标识符的nib对象。
+
+<br>
+
+
+**`- registerClass:forHeaderFooterViewReuseIdentifier:`**
+
+说明：注册一个用于创建表格视图页眉或页脚的类
+
+注意：
+
+* `identifier`参数不能是nil或空字符串
+
+* 在使用指定标识符注册时，如果已经存在指定标识符的class或nib对象，则会使用新的类替代旧的。
+
+* 你可以通过将`aClass`参数值设置为nil，来注销指定标识符的类。
+
+<br>
+
+
+**`- dequeueReusableHeaderFooterViewWithIdentifier:`**
+
+说明：通过指定的标识符返回一个可重用的页眉或页脚视图
+
+注意：
+
+* `identifier`参数不能是nil
+
+* 一个表格视图维护着一个被表格视图的代理标记为重用的`UITableViewHeaderFooterView`对象队列
+
+<br>
 
 
 <br>
