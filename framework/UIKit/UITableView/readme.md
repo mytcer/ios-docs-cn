@@ -234,6 +234,179 @@ tableView.separatorInset = UIEdgeInsetsMake(0, 3, 0, 11);
 <br>
 
 
+**`tableHeaderView`**
+
+说明：表格页眉视图，默认值为nil。
+
+注意：
+
+* 表格页眉视图与章节页眉（即section header）是不同的
+
+<br>
+
+
+**`tableFooterView`**
+
+说明：表格页脚视图，默认值为nil。
+
+注意：
+
+* 表格页脚视图与章节页脚（即section footer）是不同的
+
+<br>
+
+
+**`sectionHeaderHeight`**
+
+说明：表格视图中章节的页眉高度，非负值。
+
+注意：
+
+* 这个属性值仅用于表格视图的代理对象没有实现`tableView:heightForHeaderInSection:`方法的情况
+
+<br>
+
+
+**`sectionFooterHeight`**
+
+说明：表格视图中章节的页脚高度，非负值。
+
+注意：
+
+* 这个属性值仅用于表格视图的代理对象没有实现`tableView:heightForFooterInSection:`方法的情况
+
+<br>
+
+
+**`- headerViewForSection:`**
+
+说明：返回指定章节的页眉视图
+
+<br>
+
+
+**`- footerViewForSection:`**
+
+说明：返回指定章节的页脚视图
+
+<br>
+
+
+**`- cellForRowAtIndexPath:`**
+
+说明：返回指定索引路径中的表格单元格
+
+注意：
+
+* 如果单元格不可见，或indexPath越界，则返回nil。
+
+<br>
+
+
+**`- indexPathForCell:`**
+
+说明：返回给定的表格单元格所在的索引路径
+
+注意：
+
+* 如果indexPath是无效的，则返回nil。
+
+<br>
+
+
+**`- indexPathForRowAtPoint:`**
+
+说明：返回一个给定点所在的行对应的索引路径
+
+注意：
+
+* 如果点超出了任意行的边界，则返回nil。
+
+<br>
+
+
+**`- indexPathsForRowsInRect:`**
+
+说明：返回一个给定的矩形所覆盖的行对应的索引路径
+
+注意：
+
+* 如果矩形没有覆盖任何行，则返回一个空数组。
+
+<br>
+
+
+**`visibleCells`**
+
+说明：只读，返回表格视图中的可见单元格。
+
+<br>
+
+
+**`indexPathsForVisibleRows`**
+
+说明：只读，返回表格视图可见行的索引路径。
+
+注意：
+
+* 如果没有可见行，则返回nil。
+
+<br>
+
+
+**`estimatedRowHeight`**
+
+说明：表格视图的预估行高，默认值为0。
+
+注意：
+
+* 如果表格包含了可变高度的行，则在加载表格时，可能需要计算所有行的高度（这会影响表格的加载性能），而使用预估高度可以将一些几何计算的成本，从表格加载时间推迟到滚动时间，从而提高性能。
+
+* 当你创建一个自我调整大小的表格单元格时，你需要设置该属性并通过约束来定义单元格的尺寸。
+
+<br>
+
+
+**`estimatedSectionHeaderHeight`**
+
+说明：表格视图章节页眉的预估高度，默认值为0。
+
+注意：
+
+* 如果表格包含了可变高度的章节页眉，则在加载表格时，可能需要计算所有章节的页眉高度（这会影响表格的加载性能），而使用预估高度可以将一些几何计算的成本，从表格加载时间推迟到滚动时间，从而提高性能。
+
+<br>
+
+
+**`estimatedSectionFooterHeight`**
+
+说明：表格视图章节页脚的预估高度，默认值为0。
+
+注意：
+
+* 如果表格包含了可变高度的章节页脚，则在加载表格时，可能需要计算所有章节的页脚高度（这会影响表格的加载性能），而使用预估高度可以将一些几何计算的成本，从表格加载时间推迟到滚动时间，从而提高性能。
+
+<br>
+
+
+**`- scrollToRowAtIndexPath:atScrollPosition:animated:`**
+
+说明：滚动表格视图，直到索引路径标识的行位于屏幕上的指定位置。
+
+注意：
+
+* 调用此方法不会导致代理对象接收到`scrollViewDidScroll:`消息
+
+<br>
+
+
+**`- scrollToNearestSelectedRowAtScrollPosition:animated:`**
+
+说明：滚动表格视图，以便于被选中的行靠近指定的位置。
+
+<br>
+
+
 <br>
 ***
 <br>
