@@ -407,6 +407,77 @@ tableView.separatorInset = UIEdgeInsetsMake(0, 3, 0, 11);
 <br>
 
 
+**`indexPathForSelectedRow`**
+
+说明：只读，返回选中行对应的索引路径。
+
+注意：
+
+* 如果索引路径是无效的，则返回nil。
+
+* 如果选中了多个行，则返回选中行数组中第一个对象对应的索引路径。
+
+<br>
+
+
+**`indexPathsForSelectedRows`**
+
+说明：只读，返回被选中的多个行对应的索引路径。
+
+注意：
+
+* 如果没有行被选中，则返回nil。
+
+<br>
+
+
+**`- selectRowAtIndexPath:animated:scrollPosition:`**
+
+说明：通过指定的索引路径来选择一个表格行，并可选地将其滚动到表格视图中的指定位置。
+
+注意：
+
+* 调用该方法不会导致代理收到`tableView:willSelectRowAtIndexPath:`或`tableView:didSelectRowAtIndexPath:`消息，也不会导致`UITableViewSelectionDidChangeNotification`通知被发送。
+
+* 将`scrollPosition`的参数值设置为`UITableViewScrollPositionNone`，将不会产生滚动。
+
+例子：
+
+```
+// 滚动到最新选中的行
+NSIndexPath *rowToSelect;
+UITableView *myTableView;
+[myTableView selectRowAtIndexPath:rowToSelect animated:YES scrollPosition:UITableViewScrollPositionNone];
+[myTableView scrollToRowAtIndexPath:rowToSelect atScrollPosition:UITableViewScrollPositionNone animated:YES];
+```
+
+<br>
+
+
+**`- deselectRowAtIndexPath:animated:`**
+
+说明：通过指定的索引路径来取消选中一个表格行，并且可以设置这个取消选中是否带有动画效果。
+
+注意：
+
+* 调用该方法不会导致代理收到`tableView:willDeselectRowAtIndexPath:`或`tableView:didDeselectRowAtIndexPath:`消息，也不会导致`UITableViewSelectionDidChangeNotification`通知被发送。
+
+* 调用此方法不会导致滚动到被取消选中的行
+
+<br>
+
+
+**`allowsSelection`**
+
+说明：布尔值，表示是否允许用户选中表格行，YES表示允许选中。
+
+注意：
+
+* 该属性仅为影响非编辑模式下的表格行选中，编辑模式下需要通过`allowsSelectionDuringEditing`属性来设置。
+
+<br>
+
+
 <br>
 ***
 <br>
