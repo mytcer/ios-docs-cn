@@ -469,13 +469,305 @@ UITableView *myTableView;
 
 **`allowsSelection`**
 
-说明：布尔值，表示是否允许用户选中表格行，YES表示允许选中。
+说明：布尔值，表示是否允许用户选中表格行，YES表示允许。
 
 注意：
 
 * 该属性仅为影响非编辑模式下的表格行选中，编辑模式下需要通过`allowsSelectionDuringEditing`属性来设置。
 
 <br>
+
+
+**`allowsMultipleSelection`**
+
+说明：布尔值，表示是否允许用户在非编辑模式下选中多个表格行，YES表示允许，默认值为NO。
+
+<br>
+
+
+**`allowsSelectionDuringEditing`**
+
+说明：布尔值，表示是否允许用户在编辑模式下选中表格行，YES表示允许，默认值为NO。
+
+<br>
+
+
+**`allowsMultipleSelectionDuringEditing`**
+
+说明：布尔值，表示是否允许用户在编辑模式下选中多个表格行，YES表示允许，默认值为NO。
+
+<br>
+
+
+**`- beginUpdates`**
+
+说明：开始一系列的方法调用，像插入、删除、选中表格行和章节。
+
+注意：
+
+* 如果你想在表格视图中并发执行插入、删除、选中表格行和章节的操作，同时使用动画效果，那就调用该方法。
+
+* 调用该方法之后，必须调用`endUpdates`。
+
+* `beginUpdates`与`endUpdates`方法组可以嵌套使用
+
+* 可以使用`beginUpdates`与`endUpdates`方法组，在不重载单元格的情况下，动画的改变单元格的高度。
+
+* 如果你不将插入、删除、选中表格行和章节的操作放在`beginUpdates`与`endUpdates`方法组内，表格属性（如行数）可能会失效。
+
+* 你不应该在`beginUpdates`与`endUpdates`方法组内调用`reloadData`方法
+
+<br>
+
+
+**`- endUpdates`**
+
+说明：结束一系列的方法调用，像插入、删除、选中，或重载表格行和章节。
+
+注意：
+
+* 当你调用该方法时，表格视图会同时动画的执行插入、删除、选中，或重载表格行和章节的操作。
+
+<br>
+
+
+**`- insertRowsAtIndexPaths:withRowAnimation:`**
+
+说明：将表格行插入到索引路径标识的指定位置，并可以指定是否以动画方式插入。
+
+注意：
+
+* 当在`beginUpdates`与`endUpdates`方法组内调用该方法时，表格视图会延迟任何行或章节的插入操作，直到它处理完行或章节的删除操作。
+
+<br>
+
+
+**`- deleteRowsAtIndexPaths:withRowAnimation:`**
+
+说明：删除被指定索引路径标识的表格行，并可以指定是否以动画方式删除。
+
+注意：
+
+* 当在`beginUpdates`与`endUpdates`方法组内调用该方法时，表格视图会延迟任何行或章节的插入操作，直到它处理完行或章节的删除操作。
+
+<br>
+
+
+**`- moveRowAtIndexPath:toIndexPath:`**
+
+说明：将表格行从指定位置移动到目标位置
+
+注意：
+
+* 该方法每次只能移动一个表格行，如果你想移动多行，可以在`beginUpdates`与`endUpdates`方法组内反复地调用该方法。
+
+<br>
+
+
+**`- insertSections:withRowAnimation:`**
+
+说明：向表格视图中插入一个或多个章节，并可以指定是否以动画方式插入。
+
+注意：
+
+* 当在`beginUpdates`与`endUpdates`方法组内调用该方法时，表格视图会延迟任何行或章节的插入操作，直到它处理完行或章节的删除操作。
+
+<br>
+
+
+**`- deleteSections:withRowAnimation:`**
+
+说明：从表格视图中删除一个或多个章节，并可以指定是否以动画方式删除。
+
+注意：
+
+* 当在`beginUpdates`与`endUpdates`方法组内调用该方法时，表格视图会延迟任何行或章节的插入操作，直到它处理完行或章节的删除操作。
+
+<br>
+
+
+**`- moveSection:toSection:`**
+
+说明：在表格视图中，将一个章节移动到新位置。
+
+注意：
+
+* 该方法每次只能移动一个表格章节，如果你想移动多个章节，可以在`beginUpdates`与`endUpdates`方法组内反复地调用该方法。
+
+<br>
+
+
+**`editing`**
+
+说明：布尔值，用于表明表格视图是否处于编辑模式，默认值为NO。
+
+注意：
+
+* 当表格处于编辑模式时，每个单元格的左边可能会显示一个插入或删除控件，右边可能会显示一个排序控件，这些都取决于如何配置单元格。
+
+* 轻击一个控件会导致表格视图调用数据源的`tableView:commitEditingStyle:forRowAtIndexPath:`方法
+
+<br>
+
+
+**`- setEditing:animated:`**
+
+说明：切换表格视图的编辑模式状态
+
+<br>
+
+
+**`- reloadData`**
+
+说明：重载表格视图的行和章节
+
+注意：
+
+* 为了提高效率，表格视图只会重新显示可见的行。
+
+* 你不应该在`beginUpdates`与`endUpdates`方法组内调用`reloadData`方法
+
+<br>
+
+
+**`- reloadRowsAtIndexPaths:withRowAnimation:`**
+
+说明：使用指定的动画效果重载指定的表格行
+
+注意：
+
+* 当在`beginUpdates`与`endUpdates`方法组内调用该方法时，它的行为类似于`deleteRowsAtIndexPaths:withRowAnimation:`。
+
+<br>
+
+
+**`- reloadSections:withRowAnimation:`**
+
+说明：使用指定的动画效果重载指定的表格章节
+
+注意：
+
+* 当在`beginUpdates`与`endUpdates`方法组内调用该方法时，它的行为类似于`deleteSections:withRowAnimation:`。
+
+<br>
+
+
+**`- reloadSectionIndexTitles`**
+
+说明：重载表格视图右侧的索引栏项目
+
+注意：
+
+* 该方法提供了一种插入或删除表格章节后，在不重载整个表格的情况下，更新章节索引的方法。
+
+<br>
+
+
+**`- rectForSection:`**
+
+说明：返回表格视图指定章节的绘制区域
+
+<br>
+
+
+**`- rectForRowAtIndexPath:`**
+
+说明：返回被指定索引路径标识的表格行的绘制区域，如果索引路径是无效的，则返回CGRectZero。
+
+<br>
+
+
+**`- rectForFooterInSection:`**
+
+说明：返回指定章节页脚的绘制区域
+
+<br>
+
+
+**`- rectForHeaderInSection:`**
+
+说明：返回指定章节页眉的绘制区域
+
+<br>
+
+
+**`dataSource`**
+
+说明：表格视图的数据源对象
+
+注意：
+
+* 数据源对象必须遵循`UITableViewDataSource`协议
+
+* 它是非持有的（不会增加数据源对象的引用计数）
+
+<br>
+
+
+**`delegate`**
+
+说明：表格视图的代理对象
+
+注意：
+
+* 代理对象必须遵循`UITableViewDelegate`协议
+
+* 它是非持有的（不会增加代理对象的引用计数）
+
+<br>
+
+
+**`sectionIndexMinimumDisplayRowCount`**
+
+说明：表示在表格视图的第几行显示右边的索引列表，默认值为0。
+
+注意：
+
+* 此属性仅适用于风格为`UITableViewStylePlain`的表格视图
+
+<br>
+
+
+**`sectionIndexColor`**
+
+说明：表格视图索引文本的颜色
+
+注意：
+
+* 当属性值为nil时，表示使用默认颜色。
+
+<br>
+
+
+**`sectionIndexBackgroundColor`**
+
+说明：表格视图的章节索引在没有被触摸时的背景颜色
+
+注意：
+
+* 当属性值为nil时，表示使用默认颜色。
+
+<br>
+
+
+**`sectionIndexTrackingBackgroundColor`**
+
+说明：表格视图的章节索引被触摸时的背景颜色
+
+注意：
+
+* 当属性值为nil时，表示使用默认颜色。
+
+<br>
+
+
+**`UITableViewSelectionDidChangeNotification`**
+
+说明：当被选中的行发生改变时，发送该通知。
+
+注意：
+
+* 该通知没有对应的`userInfo`字典数据
 
 
 <br>
