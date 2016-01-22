@@ -96,3 +96,32 @@
 * 你不应该在该方法内调用`setEditing:animated:`，如果你因为一些原因而必须这么做，那就通过`performSelector:withObject:afterDelay:`方法来延迟调用。
 
 <br>
+
+
+**`- tableView:canEditRowAtIndexPath:`**
+
+说明：询问数据源，指定的表格行是否可编辑，YES表示可编辑。
+
+注意：
+
+* 如果没有实现该方法，所有的表格行都会被认为是可编辑的。
+
+* 对于可编辑的表格行，如果不想显示插入或删除控件，可以在代理对象的`tableView:editingStyleForRowAtIndexPath:`方法中返回`UITableViewCellEditingStyleNone`。
+
+<br>
+
+
+**`- tableView:canMoveRowAtIndexPath:`**
+
+说明：询问数据源，指定的表格行是否可以被移动到表格视图中的其他位置，YES表示可移动（此时，表格行的右侧会显示排序控件）。
+
+注意：
+
+* 默认情况下，如果数据源实现了`tableView:moveRowAtIndexPath:toIndexPath:`方法，就会显示排序控件。
+
+<br>
+
+
+**`- tableView:moveRowAtIndexPath:toIndexPath:`**
+
+说明：告诉数据源，将指定位置的表格行移动到表格视图中的另一个位置。
