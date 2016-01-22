@@ -125,3 +125,5 @@
 **`- tableView:moveRowAtIndexPath:toIndexPath:`**
 
 说明：告诉数据源，将指定位置的表格行移动到表格视图中的另一个位置。
+
+注意：当用户按下排序控件时
