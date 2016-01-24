@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>CGAffineTransformDemo.xcscheme</key>
+		<key>CATransform3DDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>D3EC13291C4C998600267BE0</key>
+		<key>D3CD9A5A1C549748005450A9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

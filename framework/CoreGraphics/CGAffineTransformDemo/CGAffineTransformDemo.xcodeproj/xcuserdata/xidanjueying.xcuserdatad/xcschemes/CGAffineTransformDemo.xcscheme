@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D3EC13291C4C998600267BE0"
+               BlueprintIdentifier = "D3CD9A7D1C5497B3005450A9"
                BuildableName = "CGAffineTransformDemo.app"
                BlueprintName = "CGAffineTransformDemo"
                ReferencedContainer = "container:CGAffineTransformDemo.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D3EC13291C4C998600267BE0"
+            BlueprintIdentifier = "D3CD9A7D1C5497B3005450A9"
             BuildableName = "CGAffineTransformDemo.app"
             BlueprintName = "CGAffineTransformDemo"
             ReferencedContainer = "container:CGAffineTransformDemo.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D3EC13291C4C998600267BE0"
+            BlueprintIdentifier = "D3CD9A7D1C5497B3005450A9"
             BuildableName = "CGAffineTransformDemo.app"
             BlueprintName = "CGAffineTransformDemo"
             ReferencedContainer = "container:CGAffineTransformDemo.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D3EC13291C4C998600267BE0"
+            BlueprintIdentifier = "D3CD9A7D1C5497B3005450A9"
             BuildableName = "CGAffineTransformDemo.app"
             BlueprintName = "CGAffineTransformDemo"
             ReferencedContainer = "container:CGAffineTransformDemo.xcodeproj">
