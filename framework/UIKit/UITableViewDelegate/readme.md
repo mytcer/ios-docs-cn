@@ -67,3 +67,23 @@
 * 从iOS 8.0开始可用
 
 <br>
+
+
+**`- tableView:accessoryButtonTappedForRowWithIndexPath:`**
+
+说明：告诉代理对象，用户点击了指定行的附加视图。
+
+<br>
+
+
+**`- tableView:willSelectRowAtIndexPath:`**
+
+说明：告诉代理对象，指定的行将要被选中。
+
+注意：
+
+* 如果你不想让行选中，那就返回nil。
+
+* 除非`allowsSelectionDuringEditing`属性值设置为YES，否则在编辑模式下是不会调用该方法的。
+
+<br>
