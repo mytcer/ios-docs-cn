@@ -87,3 +87,54 @@
 * 除非`allowsSelectionDuringEditing`属性值设置为YES，否则在编辑模式下是不会调用该方法的。
 
 <br>
+
+
+**`- tableView:didSelectRowAtIndexPath:`**
+
+说明：告诉代理对象，指定的行已被选中。
+
+注意：
+
+* 当表格处于编辑模式时，该方法不会被调用。
+
+<br>
+
+
+**`- tableView:willDeselectRowAtIndexPath:`**
+
+说明：告诉代理对象，指定的行将要被取消选中。
+
+注意：
+
+* 如果你不想让行被选中，那就返回nil。
+
+* 该方法仅在一种情况下调用：已经有一个表格行被选中，而用户想选中另一个表格行时。
+
+<br>
+
+
+**`- tableView:didDeselectRowAtIndexPath:`**
+
+说明：告诉代理对象，指定的行已被取消选中。
+
+<br>
+
+
+**`- tableView:viewForHeaderInSection:`**
+
+说明：要求代理对象为表格章节的页眉提供一个视图
+
+注意：
+
+* 仅当实现了`tableView:heightForHeaderInSection:`方法时，该方法才会正常工作。
+
+<br>
+
+
+**`- tableView:viewForFooterInSection:`**
+
+说明：要求代理对象为表格章节的页脚提供一个视图
+
+注意：
+
+* 仅当实现了`tableView:heightForFooterInSection:`方法时，该方法才会正常工作。
