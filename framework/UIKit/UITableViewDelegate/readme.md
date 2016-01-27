@@ -138,3 +138,83 @@
 注意：
 
 * 仅当实现了`tableView:heightForFooterInSection:`方法时，该方法才会正常工作。
+
+<br>
+
+
+**`- tableView:heightForHeaderInSection:`**
+
+说明：设置指定章节的页眉高度
+
+注意：
+
+* 从iOS 5.0开始，你必须在该方法中返回指定章节页眉的实际高度。
+
+* 如果你想隐藏指定章节的页眉，可以在该方法中返回一个大于0小于1的高度，直接返回0会无效。
+
+<br>
+
+
+**`- tableView:estimatedHeightForHeaderInSection:`**
+
+说明：为指定章节的页眉设置一个预估高度
+
+注意：设置预估高度的目的，是为了表格视图的加载性能，因为当表格视图中存在可变高度的章节页眉时，表格视图在加载时就需要计算所有页眉的高度，这就会导致表格视图的加载时间变长。给章节页眉设置预估高度，可以将这些计算从加载时间延迟到滚动时间。
+
+<br>
+
+
+**`- tableView:heightForFooterInSection:`**
+
+说明：设置指定章节的页脚高度
+
+注意：
+
+* 如果表格视图的风格是`UITableViewStylePlain`时，不会调用该方法。
+
+* 从iOS 5.0开始，你必须在该方法中返回指定章节页脚的实际高度。
+
+* 如果你想隐藏指定章节的页眉，可以在该方法中返回一个大于0小于1的高度，直接返回0会无效。
+
+<br>
+
+
+**`- tableView:estimatedHeightForFooterInSection:`**
+
+说明：为指定章节的页脚设置一个预估高度
+
+注意：见`- tableView:estimatedHeightForHeaderInSection:`
+
+<br>
+
+
+**`- tableView:willDisplayHeaderView:forSection:`**
+
+说明：告诉代理对象，指定章节的页眉视图即将显示。
+
+<br>
+
+
+**`- tableView:willDisplayFooterView:forSection:`**
+
+说明：告诉代理对象，指定章节的页脚视图即将显示。
+
+<br>
+
+
+**`- tableView:willBeginEditingRowAtIndexPath:`**
+
+说明：告诉代理对象，表格视图即将进入编辑模式。
+
+注意：
+
+* 当用户在一个表格行上水平滑动时会调用该方法
+
+<br>
+
+
+**`- tableView:didEndEditingRowAtIndexPath:`**
+
+说明：告诉代理对象，表格视图已经退出编辑模式。
+
+<br>
