@@ -218,3 +218,41 @@
 说明：告诉代理对象，表格视图已经退出编辑模式。
 
 <br>
+
+
+**`- tableView:editingStyleForRowAtIndexPath:`**
+
+说明：要求代理对象为表格视图中指定位置的行提供编辑风格
+
+注意：
+
+* 如果表格处于编辑模式，且代理没有实现该方法，则使用`UITableViewCellEditingStyleDelete`风格。
+
+<br>
+
+
+**`- tableView:titleForDeleteConfirmationButtonForRowAtIndexPath:`**
+
+说明：设置表格行右侧删除按钮的标题，默认标题为"删除"（英文下为"Delete")。
+
+<br>
+
+
+**`- tableView:shouldIndentWhileEditingRowAtIndexPath:`**
+
+说明：返回一个布尔值，表示指定表格行的背景是否应该缩进。
+
+注意：
+
+* 如果没有实现该方法，则默认返回YES。
+
+* 该方法与`tableView:indentationLevelForRowAtIndexPath:`方法无关
+
+<br>
+
+
+**`- tableView:targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:`**
+
+说明：要求代理对象返回一个新的索引路径来重新定位移动的表格行
+
+<br>
