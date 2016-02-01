@@ -117,6 +117,12 @@
 
 说明：告诉代理对象，指定的行已被取消选中。
 
+注意：
+
+* 系统会先执行该方法，然后再执行`- tableView:didSelectRowAtIndexPath:`方法。
+
+* `indexPath`参数所代表的索引路径，其实是上一个被选中表格行（如果存在）的索引路径。
+
 <br>
 
 
@@ -256,3 +262,46 @@
 说明：要求代理对象返回一个新的索引路径来重新定位移动的表格行
 
 <br>
+
+
+**`- tableView:didEndDisplayingCell:forRowAtIndexPath:`**
+
+说明：告诉代理对象，指定的单元格已从表格视图中移除。
+
+<br>
+
+
+**`- tableView:didEndDisplayingHeaderView:forSection:`**
+
+说明：告诉代理对象，指定的页眉视图已从表格视图中移除。
+
+<br>
+
+
+**`- tableView:didEndDisplayingFooterView:forSection:`**
+
+说明：告诉代理对象，指定的页脚视图已从表格视图中移除。
+
+<br>
+
+
+**`- tableView:shouldShowMenuForRowAtIndexPath:`**
+
+说明：返回一个布尔值，表示是否为指定的表格行显示编辑菜单，默认值为NO。
+
+注意：
+
+* 当返回YES时，编辑菜单会显示在指定的表格行附近并指向该行。
+
+* 如果用户按住一个表格行，该方法会首先被调用（如果实现了该方法）。
+
+<br>
+
+
+**`- tableView:canPerformAction:forRowAtIndexPath:withSender:`**
+
+说明：返回一个布尔值，表示是否将复制和粘帖命令从指定表格行的编辑菜单中排除，默认值为NO。
+
+注意：
+
+* 该方法在`tableView:shouldShowMenuForRowAtIndexPath:`之后调用
