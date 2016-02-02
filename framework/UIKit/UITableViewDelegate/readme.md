@@ -305,3 +305,39 @@
 注意：
 
 * 该方法在`tableView:shouldShowMenuForRowAtIndexPath:`之后调用
+
+<br>
+
+
+**`- tableView:performAction:forRowAtIndexPath:withSender:`**
+
+说明：告诉代理对象，对指定行的内容进行复制或粘帖操作。
+
+注意：
+
+* 当用户点击了编辑菜单中的“复制”或“粘帖”项时，表格视图会调用该方法。
+
+<br>
+
+
+**`- tableView:shouldHighlightRowAtIndexPath:`**
+
+说明：返回一个布尔值，表示指定的表格行是否应该被高亮。
+
+注意：
+
+* 如果没有实现该方法，则返回YES。
+
+<br>
+
+
+**`- tableView:didHighlightRowAtIndexPath:`**
+
+说明：告诉代理对象，指定的表格行已经被高亮。
+
+<br>
+
+
+**`- tableView:didUnhighlightRowAtIndexPath:`**
+
+说明：告诉代理对象，指定的表格行已经取消高亮。

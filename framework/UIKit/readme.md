@@ -41,3 +41,4 @@ UIKit还为下述和设备紧密相连的功能提供支持：
 * [UIView](./UIView/readme.md)
 * [UITableView](./UITableView/readme.md)
 * [UITableViewDataSource](./UITableViewDataSource/readme.md)
+* [UITableViewDelegate](./UITableViewDelegate/readme.md)
