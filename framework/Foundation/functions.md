@@ -183,5 +183,54 @@
 
 * 如果定义了预处理宏`NS_BLOCK_ASSERTIONS`，那么断言会被禁用，所有宏返回`void`。
 
+
+<br>
+***
 <br>
 
+
+### 包
+
+**`NSLocalizedString`**
+
+说明：返回一个字符串的本地化版本
+
+使用：`NSString *localStr = NSLocalizedString(NSString *key, NSString *comment);`
+
+类型：宏
+
+注意：
+
+* 使用该宏来生成默认的`Localizable.strings`文件
+
+<br>
+
+
+**`NSLocalizedStringFromTable`**
+
+说明：返回指定表中字符串的本地化版本
+
+使用：`NSString *localStr = NSLocalizedStringFromTable(NSString *key, NSString *tableName, NSString *comment);`
+
+类型：宏
+
+注意：
+
+* 使用该宏来生成`[tableName].strings`文件
+
+<br>
+
+
+**`NSLocalizedStringFromTableInBundle`**
+
+说明：返回一个字符串的本地化版本
+
+使用：`NSString *localStr = NSLocalizedStringFromTableInBundle(NSString *key, NSString *tableName, NSBundle *bundle, NSString *comment);`
+
+类型：宏
+
+注意：
+
+* 使用该宏在指定的包中生成`[tableName].strings`文件
+
+<br>
