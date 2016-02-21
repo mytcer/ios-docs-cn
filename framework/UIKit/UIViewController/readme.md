@@ -914,3 +914,4 @@
 
 * [addChildViewController属性介绍(剖析网易新闻标签栏视图切换)](http://blog.csdn.net/hmt20130412/article/details/34523235)
 * [通过edgesForExtendedLayout解决视图上移44pt的问题](http://blog.csdn.net/cny901111/article/details/26529949)
+* [ios7实现全屏模态半透明页面的效果](http://www.xuebuyuan.com/2056436.html) 【注：文中解释了为什么模态显示的页面背景会变黑，但给出的解决方案无效，经试验，可以将被模态显示的页面的`modalPresentationStyle`设置为`UIModalPresentationCustom`可以解决问题。】
