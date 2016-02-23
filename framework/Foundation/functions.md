@@ -234,3 +234,77 @@
 * 使用该宏在指定的包中生成`[tableName].strings`文件
 
 <br>
+
+
+**`NSLocalizedStringWithDefaultValue`**
+
+说明：返回一个字符串的本地化版本
+
+使用：`NSString *localStr = NSLocalizedStringWithDefaultValue(NSString *key, NSString *tableName, NSBundle *bundle, NSString *value, NSString *comment);`
+
+类型：宏
+
+注意：
+
+* 使用该宏在指定的包中生层`[tableName].strings`文件
+
+
+<br>
+***
+<br>
+
+
+### 字节排序
+
+**`NSConvertHostDoubleToSwapped`**
+
+说明：将指定的双精度浮点数的值转换成可以交换字节的值
+
+使用：`NSSwappedDouble result = NSConvertHostDoubleToSwapped(double x);`
+
+注意：
+
+* 该函数并不会真的交换`x`的字节
+* 你不应该直接调用该函数
+
+<br>
+
+
+**`NSConvertHostFloatToSwapped`**
+
+说明：将指定的单精度浮点数的值转换成可以交换字节的值
+
+使用：`NSSwappedFloat result = NSConvertHostFloatToSwapped(float x);`
+
+注意：
+
+* 该函数并不会真的交换`x`的字节
+* 你不应该直接调用该函数
+
+<br>
+
+
+**`NSConvertSwappedDoubleToHost`**
+
+说明：将指定的值转换为双精度浮点数值
+
+使用：`double result = NSConvertSwappedDoubleToHost(NSSwappedDouble x);`
+
+注意：
+
+* 该函数并不会真的交换`x`的字节
+* 你不应该直接调用该函数
+
+<br>
+
+
+**`NSConvertSwappedFloatToHost`**
+
+说明：将指定的值转为单精度浮点数值
+
+使用：`float result = NSConvertSwappedFloatToHost(NSSwappedFloat x);`
+
+注意：
+
+* 该函数并不会真的交换`x`的字节
+* 你不应该直接调用该函数
