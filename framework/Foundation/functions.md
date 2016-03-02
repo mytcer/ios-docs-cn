@@ -308,3 +308,12 @@
 
 * 该函数并不会真的交换`x`的字节
 * 你不应该直接调用该函数
+
+<br>
+
+
+**`NSHostByteOrder`**
+
+说明：返回字节存储次序格式：`NS_LittleEndian` 或 `NS_BigEndian`。
+
+使用：`long result = NSHostByteOrder();`
