@@ -32,6 +32,7 @@
 * [那些不能错过的Xcode插件](http://www.cocoachina.com/industry/20130918/7022.html)
 * [xcode6 文档自动标注VVDocumenter更新后支持](http://jingyan.baidu.com/article/c45ad29cc9e33c051653e210.html)
 * [xcode6.3 ineligible devices解决方法](http://www.cocoachina.com/bbs/read.php?tid-294841.html)
+* [Xcode中的 workspace, project, target, scheme](http://www.jianshu.com/p/1308a199f168)
 * **crash相关**
 	* [通过xcode Organizer查看crash log](http://www.cnblogs.com/max5945/p/3663966.html)
 	* [Understanding and Analyzing iOS Application Crash Reports](https://developer.apple.com/library/ios/technotes/tn2151/_index.html)
