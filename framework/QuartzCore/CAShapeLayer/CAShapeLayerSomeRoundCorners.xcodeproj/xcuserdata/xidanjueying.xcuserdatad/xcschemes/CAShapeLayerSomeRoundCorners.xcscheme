@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D3CD9A5A1C549748005450A9"
-               BuildableName = "CATransform3DDemo.app"
-               BlueprintName = "CATransform3DDemo"
-               ReferencedContainer = "container:CATransform3DDemo.xcodeproj">
+               BlueprintIdentifier = "D3AA6F1E1CA0064B008FC988"
+               BuildableName = "CAShapeLayerSomeRoundCorners.app"
+               BlueprintName = "CAShapeLayerSomeRoundCorners"
+               ReferencedContainer = "container:CAShapeLayerSomeRoundCorners.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D3CD9A5A1C549748005450A9"
-            BuildableName = "CATransform3DDemo.app"
-            BlueprintName = "CATransform3DDemo"
-            ReferencedContainer = "container:CATransform3DDemo.xcodeproj">
+            BlueprintIdentifier = "D3AA6F1E1CA0064B008FC988"
+            BuildableName = "CAShapeLayerSomeRoundCorners.app"
+            BlueprintName = "CAShapeLayerSomeRoundCorners"
+            ReferencedContainer = "container:CAShapeLayerSomeRoundCorners.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D3CD9A5A1C549748005450A9"
-            BuildableName = "CATransform3DDemo.app"
-            BlueprintName = "CATransform3DDemo"
-            ReferencedContainer = "container:CATransform3DDemo.xcodeproj">
+            BlueprintIdentifier = "D3AA6F1E1CA0064B008FC988"
+            BuildableName = "CAShapeLayerSomeRoundCorners.app"
+            BlueprintName = "CAShapeLayerSomeRoundCorners"
+            ReferencedContainer = "container:CAShapeLayerSomeRoundCorners.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D3CD9A5A1C549748005450A9"
-            BuildableName = "CATransform3DDemo.app"
-            BlueprintName = "CATransform3DDemo"
-            ReferencedContainer = "container:CATransform3DDemo.xcodeproj">
+            BlueprintIdentifier = "D3AA6F1E1CA0064B008FC988"
+            BuildableName = "CAShapeLayerSomeRoundCorners.app"
+            BlueprintName = "CAShapeLayerSomeRoundCorners"
+            ReferencedContainer = "container:CAShapeLayerSomeRoundCorners.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
