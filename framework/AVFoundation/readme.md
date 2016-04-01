@@ -17,3 +17,13 @@
 * 用于判断声音文件详细信息的Objective-C接口，例如判断数据格式、采样率和声道数。
 
 该框架是iOS中录制播放音频和视频的唯一框架，它还支持对媒体项进行管理和处理。
+
+
+<br>
+***
+<br>
+
+
+### Demo
+
+* [使用AVPlayer与AVPlayerLayer播放视频](./AVPlayerLayer/AVPlayerLayerDemo)

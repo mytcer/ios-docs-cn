@@ -126,7 +126,7 @@
 * [漫谈iOS程序的证书和签名机制](http://www.pchou.info/ios/2015/12/14/ios-certification-and-code-sign.html)
 * [Cocoa编码规范](http://www.cocoachina.com/ios/20150908/13335.html)
 * [如何使用TestFlight进行Beta测试](http://www.cocoachina.com/ios/20141022/10009.html)
-* [浅谈iOS消息推送机制](http://jackjia.tk/2015/07/20/ios-push/)
+* [细说 iOS 消息推送](http://www.cocoachina.com/industry/20140528/8582.html)
 * [iOS如何创建推送证书](http://jingyan.baidu.com/article/7082dc1c6bb86de40a89bd1a.html)
 * [Quartz 2D的坐标系和UIKit的坐标系对比以及相互转换](https://www.ganlvji.com/quartz_2d_coordinate_uikit/)
 

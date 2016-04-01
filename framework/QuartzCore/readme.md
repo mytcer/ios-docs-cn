@@ -20,3 +20,6 @@
 * [CAShapeLayer画一个火柴人](./CAShapeLayer/CAShapeLayerStickman)
 * [CAShapeLayer实现圆角矩形](./CAShapeLayer/CAShapeLayerSomeRoundCorners)
 * [CATransformLayer作为立方体的容器（不会平面化立方体图层）](./CATransformLayer/CATransformLayerCubeDemo)
+* [CAEmitterLayer实现类爆炸效果](./CAEmitterLayer/BurstEffectDemo)
+* [通过设置CALayer的actions属性来给图层添加从左向右滑的动画](./CALayer/ActionsPropertyAnimateDemo)
+* [通过CAKeyframeAnimation实现帧动画](./CAKeyframeAnimation/CAKeyframeAnimationDemo)
