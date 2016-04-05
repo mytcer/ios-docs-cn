@@ -23,3 +23,4 @@
 * [CAEmitterLayer实现类爆炸效果](./CAEmitterLayer/BurstEffectDemo)
 * [通过设置CALayer的actions属性来给图层添加从左向右滑的动画](./CALayer/ActionsPropertyAnimateDemo)
 * [通过CAKeyframeAnimation实现帧动画](./CAKeyframeAnimation/CAKeyframeAnimationDemo)
+* [通过CAKeyframeAnimation和UIBezierPath来实现物体曲线滑行](./CAKeyframeAnimation/CurveFlightDemo)
