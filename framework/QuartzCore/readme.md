@@ -10,6 +10,20 @@
 <br>
 
 
+### 图层动画的分类
+
+* 属性动画：对单独的图层属性进行具体的控制
+
+* 动画组：把多个属性动画组合成一个独立单元
+
+* 过渡动画：可以用来对图层的任何内容做任何类型的动画，会影响整个图层。
+
+
+<br>
+***
+<br>
+
+
 ### Demo
 
 * [CATransform3D实现立方体](./CATransform3D/CATransform3DCubeDemo)
@@ -22,5 +36,8 @@
 * [CATransformLayer作为立方体的容器（不会平面化立方体图层）](./CATransformLayer/CATransformLayerCubeDemo)
 * [CAEmitterLayer实现类爆炸效果](./CAEmitterLayer/BurstEffectDemo)
 * [通过设置CALayer的actions属性来给图层添加从左向右滑的动画](./CALayer/ActionsPropertyAnimateDemo)
+* [通过动画对象的autoreverses特性来实现自动开关的门](./CABasicAnimation/AutoSwitchDoorDemo)
 * [通过CAKeyframeAnimation实现帧动画](./CAKeyframeAnimation/CAKeyframeAnimationDemo)
 * [通过CAKeyframeAnimation和UIBezierPath来实现物体曲线滑行](./CAKeyframeAnimation/CurveFlightDemo)
+* [通过CAAnimationGroup来实现物体曲线滑行的同时改变背景颜色](./CAAnimationGroup/CAAnimationGroupDemo)
+* [通过CATransition实现图片切换时的过渡动画](./CATransition/SwitchImageDemo)

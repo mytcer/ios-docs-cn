@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D39557E51CBBA16400DC2051 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D39557E41CBBA16400DC2051 /* main.m */; };
+		D39557E81CBBA16400DC2051 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D39557E71CBBA16400DC2051 /* AppDelegate.m */; };
+		D39557EB1CBBA16400DC2051 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D39557EA1CBBA16400DC2051 /* ViewController.m */; };
+		D39557EE1CBBA16400DC2051 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D39557EC1CBBA16400DC2051 /* Main.storyboard */; };
+		D39557F01CBBA16400DC2051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D39557EF1CBBA16400DC2051 /* Assets.xcassets */; };
+		D39557F31CBBA16400DC2051 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D39557F11CBBA16400DC2051 /* LaunchScreen.storyboard */; };
+		D39557FB1CBBA18700DC2051 /* door.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D39557FA1CBBA18700DC2051 /* door.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D39557E01CBBA16400DC2051 /* AutoSwitchDoorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoSwitchDoorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D39557E41CBBA16400DC2051 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D39557E61CBBA16400DC2051 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D39557E71CBBA16400DC2051 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D39557E91CBBA16400DC2051 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D39557EA1CBBA16400DC2051 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D39557ED1CBBA16400DC2051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D39557EF1CBBA16400DC2051 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D39557F21CBBA16400DC2051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D39557F41CBBA16400DC2051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D39557FA1CBBA18700DC2051 /* door.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = door.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D39557DD1CBBA16400DC2051 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D39557D71CBBA16400DC2051 = {
+			isa = PBXGroup;
+			children = (
+				D39557E21CBBA16400DC2051 /* AutoSwitchDoorDemo */,
+				D39557E11CBBA16400DC2051 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D39557E11CBBA16400DC2051 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D39557E01CBBA16400DC2051 /* AutoSwitchDoorDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D39557E21CBBA16400DC2051 /* AutoSwitchDoorDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D39557FA1CBBA18700DC2051 /* door.jpg */,
+				D39557E61CBBA16400DC2051 /* AppDelegate.h */,
+				D39557E71CBBA16400DC2051 /* AppDelegate.m */,
+				D39557E91CBBA16400DC2051 /* ViewController.h */,
+				D39557EA1CBBA16400DC2051 /* ViewController.m */,
+				D39557EC1CBBA16400DC2051 /* Main.storyboard */,
+				D39557EF1CBBA16400DC2051 /* Assets.xcassets */,
+				D39557F11CBBA16400DC2051 /* LaunchScreen.storyboard */,
+				D39557F41CBBA16400DC2051 /* Info.plist */,
+				D39557E31CBBA16400DC2051 /* Supporting Files */,
+			);
+			path = AutoSwitchDoorDemo;
+			sourceTree = "<group>";
+		};
+		D39557E31CBBA16400DC2051 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D39557E41CBBA16400DC2051 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D39557DF1CBBA16400DC2051 /* AutoSwitchDoorDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D39557F71CBBA16400DC2051 /* Build configuration list for PBXNativeTarget "AutoSwitchDoorDemo" */;
+			buildPhases = (
+				D39557DC1CBBA16400DC2051 /* Sources */,
+				D39557DD1CBBA16400DC2051 /* Frameworks */,
+				D39557DE1CBBA16400DC2051 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoSwitchDoorDemo;
+			productName = AutoSwitchDoorDemo;
+			productReference = D39557E01CBBA16400DC2051 /* AutoSwitchDoorDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D39557D81CBBA16400DC2051 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = xidanjueying;
+				TargetAttributes = {
+					D39557DF1CBBA16400DC2051 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = D39557DB1CBBA16400DC2051 /* Build configuration list for PBXProject "AutoSwitchDoorDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D39557D71CBBA16400DC2051;
+			productRefGroup = D39557E11CBBA16400DC2051 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D39557DF1CBBA16400DC2051 /* AutoSwitchDoorDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D39557DE1CBBA16400DC2051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D39557F31CBBA16400DC2051 /* LaunchScreen.storyboard in Resources */,
+				D39557F01CBBA16400DC2051 /* Assets.xcassets in Resources */,
+				D39557EE1CBBA16400DC2051 /* Main.storyboard in Resources */,
+				D39557FB1CBBA18700DC2051 /* door.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D39557DC1CBBA16400DC2051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D39557EB1CBBA16400DC2051 /* ViewController.m in Sources */,
+				D39557E81CBBA16400DC2051 /* AppDelegate.m in Sources */,
+				D39557E51CBBA16400DC2051 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D39557EC1CBBA16400DC2051 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D39557ED1CBBA16400DC2051 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D39557F11CBBA16400DC2051 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D39557F21CBBA16400DC2051 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D39557F51CBBA16400DC2051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D39557F61CBBA16400DC2051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D39557F81CBBA16400DC2051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AutoSwitchDoorDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tcer.AutoSwitchDoorDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D39557F91CBBA16400DC2051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AutoSwitchDoorDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tcer.AutoSwitchDoorDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D39557DB1CBBA16400DC2051 /* Build configuration list for PBXProject "AutoSwitchDoorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D39557F51CBBA16400DC2051 /* Debug */,
+				D39557F61CBBA16400DC2051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D39557F71CBBA16400DC2051 /* Build configuration list for PBXNativeTarget "AutoSwitchDoorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D39557F81CBBA16400DC2051 /* Debug */,
+				D39557F91CBBA16400DC2051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D39557D81CBBA16400DC2051 /* Project object */;
+}
