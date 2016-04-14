@@ -41,3 +41,4 @@
 * [通过CAKeyframeAnimation和UIBezierPath来实现物体曲线滑行](./CAKeyframeAnimation/CurveFlightDemo)
 * [通过CAAnimationGroup来实现物体曲线滑行的同时改变背景颜色](./CAAnimationGroup/CAAnimationGroupDemo)
 * [通过CATransition实现图片切换时的过渡动画](./CATransition/SwitchImageDemo)
+* [物体曲线滑行：timeOffset和speed的值对动画的影响](./CAKeyframeAnimation/TimeOffsetAndSpeedTestDemo)
