@@ -112,6 +112,7 @@
 * [PNChart](https://github.com/kevinzhow/PNChart) -- 图表库
 * [KVOController](https://github.com/facebook/KVOController) -- 简单、线程安全的KVO
 * [UITableView+FDTemplateLayoutCell](https://github.com/forkingdog/UITableView-FDTemplateLayoutCell) -- 自动计算UITableViewCell的高度并优化UITableView滚动（尚未亲自使用过）
+* [VCTransitionsLibrary](https://github.com/ColinEberhardt/VCTransitionsLibrary)  -- 视图控制器转场动画库（尚未亲自使用过）
 
 <br>
 
