@@ -42,3 +42,4 @@
 * [通过CAAnimationGroup来实现物体曲线滑行的同时改变背景颜色](./CAAnimationGroup/CAAnimationGroupDemo)
 * [通过CATransition实现图片切换时的过渡动画](./CATransition/SwitchImageDemo)
 * [物体曲线滑行：timeOffset和speed的值对动画的影响](./CAKeyframeAnimation/TimeOffsetAndSpeedTestDemo)
+* [通过removedOnCompletion与fillMode来解决动画执行结束后急速返回初始状态的问题](./CABasicAnimation/FillModeDemo)

@@ -51,7 +51,7 @@
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
     animation.keyPath = @"position";
     animation.path = self.bezierPath.CGPath;
-    animation.duration = 3.0;
+    animation.duration = 2.0;
     animation.timeOffset = self.timeOffsetSlider.value;
     animation.speed = self.speedSlider.value;
     animation.removedOnCompletion = NO;
