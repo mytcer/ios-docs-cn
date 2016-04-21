@@ -329,6 +329,8 @@
 
 * 不要直接调用该方法
 
+* 该方法只会进行位置，视图大小的数字计算，并不会引起屏幕的绘制。(注：来自web的结论，没有亲自验证)
+
 <br>
 
 
@@ -857,11 +859,15 @@
 
 * 只有使用Core Graphics 和 UIKit来绘制视图内容的子类才需要覆盖该方法
 
-* 如果视图的不透明度被设置为了YES，你的`drawRect:`方法就必须用不透明的内容填满指定的矩形。
+* 当你的视图使用其他方式设置内容时（如显示背景色、直接使用视图的层设置内容），不用覆盖该方法。
 
-* 如果你直接子类化`UIView`，那么在实现该方法时就不需要调用父类的实现。
+* 如果视图被设置成了不透明，你的`drawRect:`方法就必须用不透明的内容填满指定的矩形。
 
-* 不要直接调用该方法，在视图首次显示或视图的可见部分失效时，会自动调用该方法。
+* 如果你直接子类化`UIView`，那么在实现该方法时就不需要调用父类的实现；如果你子类化其他的视图类，则应该在你的实现中调用父类的该方法。
+
+* 不要直接调用该方法，而是通过调用`setNeedsDisplay`或`setNeedsDisplayInRect:`方法来替代。
+
+* 在视图首次显示或视图的可见部分失效时，会自动调用该方法。
 
 <br>
 
@@ -873,13 +879,14 @@
 注意：
 
 * 调用该方法后，视图并不会立即重绘，而是等到下一个绘制周期，此时所有失效的视图都会被更新。
+* 即使多次调用该方法，系统也不会多次执行drawRect方法，而只会执行一次。
 
 <br>
 
 
 **`- setNeedsDisplayInRect:`**
 
-说明：标记视图的指定矩形区域需要被重绘
+说明：标记视图的指定矩形区域需要被重绘（即局部重绘）
 
 注意：调用该方法后，会将指定的矩形添加到视图的失效矩形列表中并立即返回，等到下一个绘制周期再重绘，此时所有失效的视图都会被更新。
 
@@ -1312,6 +1319,6 @@
 
 ### 参考资源
 
-* [对drawRect和setNeedsDisplay的理解](http://blog.csdn.net/jkwmscq/article/details/47020699)
-* [详解UIView的Tint Color属性](http://www.cocoachina.com/ios/20150703/12363.html?utm_medium=referral&utm_source=pulsenews)
+* [UIView中的updateConstraints、layoutSubviews及drawRect](http://www.jianshu.com/p/438bcf8e3e53)
+* [详解UIView的tintColor属性](http://www.cocoachina.com/ios/20150703/12363.html?utm_medium=referral&utm_source=pulsenews)
 * [细数AutoLayout以来UIView和UIViewController新增的相关API](http://www.cocoachina.com/ios/20141026/10045.html)
