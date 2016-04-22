@@ -53,4 +53,5 @@ UIKit还为下述和设备紧密相连的功能提供支持：
 
 ### Demo
 
-* [使用UIBezierPath实现简易画图板](./UIBezierPath/GestureDrawingDemo)
+* [使用UIBezierPath和drawRect实现简易画图板（性能差）](./UIBezierPath/GestureDrawingDemo)
+* [使用UIBezierPath和CAShapeLayer实现简易画板（性能比drawRect的方式好）](./UIBezierPath/GestureDrawingShapeLayerDemo)

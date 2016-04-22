@@ -304,6 +304,7 @@
 				D33360F81CCA29CE004936B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
