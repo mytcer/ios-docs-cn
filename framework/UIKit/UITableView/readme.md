@@ -777,6 +777,10 @@ UITableView *myTableView;
 
 ### 参考资源
 
+* [实现UITableView头部带有图片并且下拉图片放大效果（方法一：修改图片frame）](http://www.jianshu.com/p/55ced75b5ba3)
+* [实现UITableView头部带有图片并且下拉图片放大效果（方法二：修改图片的自动布局约束）](http://www.jianshu.com/p/55ced75b5ba3)
+
+
 <br>
 ***
 <br>
