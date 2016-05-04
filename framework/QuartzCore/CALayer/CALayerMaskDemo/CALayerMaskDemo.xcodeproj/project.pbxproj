@@ -302,6 +302,7 @@
 				D3EC12D81C47B57E00267BE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

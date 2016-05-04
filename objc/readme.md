@@ -1,5 +1,17 @@
 # Objective-C
 
+### 知识点
+
+* `NSDictionary<NSString *, NSString *> *dict;`是什么意思？
+
+说明：表示`dict`key和value的类型必须是NSString型
+
+
+<br>
+***
+<br>
+
+
 ### 参考资源
 
 * [Objective-C：简介](https://zh.wikipedia.org/wiki/Objective-C)
