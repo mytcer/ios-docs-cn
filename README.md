@@ -104,15 +104,35 @@
 
 ### 五. 优质第三方框架/库
 
-* [Masonry](https://github.com/Masonry/Masonry) -- 自动布局
-* [MJRefresh](https://github.com/CoderMJLee/MJRefresh) -- 上拉下拉刷新
-* [SDWebImage](https://github.com/rs/SDWebImage) -- 图片缓存
-* [SVProgressHUD](https://github.com/samvermette/SVProgressHUD) -- 各种提示层
-* [AFNetworking](https://github.com/AFNetworking/AFNetworking) -- 网络开发
-* [PNChart](https://github.com/kevinzhow/PNChart) -- 图表库
-* [KVOController](https://github.com/facebook/KVOController) -- 简单、线程安全的KVO
-* [UITableView+FDTemplateLayoutCell](https://github.com/forkingdog/UITableView-FDTemplateLayoutCell) -- 自动计算UITableViewCell的高度并优化UITableView滚动（尚未亲自使用过）
-* [VCTransitionsLibrary](https://github.com/ColinEberhardt/VCTransitionsLibrary)  -- 视图控制器转场动画库（尚未亲自使用过）
+* 缓存相关
+	* [SDWebImage](https://github.com/rs/SDWebImage) -- 图片缓存
+* 网络相关
+	* [AFNetworking](https://github.com/AFNetworking/AFNetworking) -- 处理网络请求
+* KVO
+	* [KVOController](https://github.com/facebook/KVOController) -- 简单、线程安全的KVO
+* 弹出层相关
+	* [SVProgressHUD](https://github.com/samvermette/SVProgressHUD) -- 各种提示层
+* 图表
+	* [PNChart](https://github.com/kevinzhow/PNChart) -- 图表库
+* 自动布局
+	* [Masonry](https://github.com/Masonry/Masonry)
+* 上拉下拉刷新
+	* [MJRefresh](https://github.com/CoderMJLee/MJRefresh)
+* UITabBarController相关
+	* [CYLTabBarController](https://github.com/ChenYilong/CYLTabBarController) -- 从README来看，使用方便，功能强大（尚未亲自使用过）
+* UIViewController相关
+	* [VCTransitionsLibrary](https://github.com/ColinEberhardt/VCTransitionsLibrary)  -- 视图控制器转场动画库（尚未亲自使用过）
+	* [UIScrollSlidingPages](https://github.com/TomThorpe/UIScrollSlidingPages) -- 页面级的tab切换（尚未亲自使用过）
+	* [DLSlideView](https://github.com/agdsdl/DLSlideView) -- 基于ViewController的container特性（而不是scrollview）来管理各个子页面，以支持无限分页（尚未亲自使用过）
+	* [WMPageController](https://github.com/wangmchn/WMPageController) -- 页面级的tab切换（尚未亲自使用过）
+* UITableView相关
+	* [UITableView+FDTemplateLayoutCell](https://github.com/forkingdog/UITableView-FDTemplateLayoutCell) -- 自动计算UITableViewCell的高度并优化UITableView滚动（尚未亲自使用过）
+	* [MGSwipeTableCell](https://github.com/MortimerGoro/MGSwipeTableCell) -- 让UITableViewCell支持侧滑菜单（尚未亲自使用过）
+	* [XLForm](https://github.com/xmartlabs/XLForm) -- 表单库（尚未亲自使用过）
+	* [RETableViewManager](https://github.com/romaonthego/RETableViewManager) -- 它可以十分方便地生成各种样式、各种功能的TableView（尚未亲自使用过）
+	* [UUChatTableView](https://github.com/ZhipingYang/UUChatTableView) -- 支持文本、图片以及音频的气泡聊天界面（尚未亲自使用过）
+	* [DZNEmptyDataSet](https://github.com/dzenbot/DZNEmptyDataSet) -- 专门用于处理UITableView或UICollectionView为空的情况（尚未亲自使用过）
+	* [FDStackView](https://github.com/forkingdog/FDStackView) -- 让iOS9之前的版本（最低支持iOS6）也支持UIStackView
 
 <br>
 
