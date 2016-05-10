@@ -110,6 +110,8 @@
 	* [AFNetworking](https://github.com/AFNetworking/AFNetworking) -- 处理网络请求
 * KVO
 	* [KVOController](https://github.com/facebook/KVOController) -- 简单、线程安全的KVO
+* Crash Reporter
+	* [KSCrash](https://github.com/kstenerud/KSCrash)
 * 图表
 	* [PNChart](https://github.com/kevinzhow/PNChart) -- 图表库
 * 自动布局
@@ -141,14 +143,16 @@
 * 菜单
 	* [AwesomeMenu](https://github.com/levey/AwesomeMenu) -- 仿Path 2.0菜单
 	* [DCPathButton](https://github.com/Tangdixi/DCPathButton) -- 仿Path 4.0菜单
+	* [KYGooeyMenu](https://github.com/KittenYang/KYGooeyMenu) -- 带粘性的扇形菜单，动画效果很赞
+	* [LiquidFloatingActionButton](https://github.com/yoavlt/LiquidFloatingActionButton) -- 带粘性的线性菜单，动画效果与KYGooeyMenu类似
+
 
 <br>
-
 ***
-
 <br>
 
-### 六. 优质参考资源
+
+### 六. 优质技术资料
 
 * [iOS技术概览中文版](./resource/iOS技术概览.pdf)
 * [iOS Provisioning Profile(Certificate)与Code Signing详解](http://blog.csdn.net/phunxm/article/details/42685597)
@@ -160,12 +164,23 @@
 * [Quartz 2D的坐标系和UIKit的坐标系对比以及相互转换](https://www.ganlvji.com/quartz_2d_coordinate_uikit/)
 * [IOS Xcode开发中的文件后缀名区别m,mm,cpp,h](http://www.xuebuyuan.com/2106036.html)
 
-<br>
 
+<br>
 ***
-
 <br>
 
-### 七. 其他优质资源
+
+### 七. 好工具
+
+* [appetize.io](https://appetize.io/) -- 一个为iOS和Android提供APP在线演示的网站，只要将你的demo程序上传到appetize.io，就可以直接在网页上运行你的demo。
+* [Cocoa Controls](https://www.cocoacontrols.com/) -- 你可以在这里找到大量针对iOS和Mac OS X开发的GUI控件，并且大部分资源是免费使用的。
+
+
+<br>
+***
+<br>
+
+
+### 八. 其他优质资源
 
 * [apistore](http://apistore.baidu.com/astore/index) -- 各种开放API的聚集地
