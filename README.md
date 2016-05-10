@@ -106,45 +106,68 @@
 
 * 缓存相关
 	* [SDWebImage](https://github.com/rs/SDWebImage) -- 图片缓存
+
 * 网络相关
 	* [AFNetworking](https://github.com/AFNetworking/AFNetworking) -- 处理网络请求
+
 * KVO
 	* [KVOController](https://github.com/facebook/KVOController) -- 简单、线程安全的KVO
+
 * Crash Reporter
 	* [KSCrash](https://github.com/kstenerud/KSCrash)
+
 * 图表
 	* [PNChart](https://github.com/kevinzhow/PNChart) -- 图表库
+
 * 自动布局
 	* [Masonry](https://github.com/Masonry/Masonry)
+
 * 上拉下拉刷新
 	* [MJRefresh](https://github.com/CoderMJLee/MJRefresh)
+
 * UITabBarController相关
 	* [CYLTabBarController](https://github.com/ChenYilong/CYLTabBarController) -- 从README来看，使用方便，功能强大（尚未亲自使用过）
+
 * UIViewController相关
 	* [VCTransitionsLibrary](https://github.com/ColinEberhardt/VCTransitionsLibrary)  -- 视图控制器转场动画库（尚未亲自使用过）
 	* [UIScrollSlidingPages](https://github.com/TomThorpe/UIScrollSlidingPages) -- 页面级的tab切换（尚未亲自使用过）
 	* [DLSlideView](https://github.com/agdsdl/DLSlideView) -- 基于ViewController的container特性（而不是scrollview）来管理各个子页面，以支持无限分页（尚未亲自使用过）
 	* [WMPageController](https://github.com/wangmchn/WMPageController) -- 页面级的tab切换（尚未亲自使用过）
-	* [RKSwipeBetweenViewControllers](https://github.com/cwRichardKim/RKSwipeBetweenViewControllers) -- UIPageViewController和自定义UISegmentedControl的同步动画
+	* [RKSwipeBetweenViewControllers](https://github.com/cwRichardKim/RKSwipeBetweenViewControllers) -- UIPageViewController和自定义UISegmentedControl的同步动画（尚未亲自使用过）
+
 * UITableView相关
 	* [UITableView+FDTemplateLayoutCell](https://github.com/forkingdog/UITableView-FDTemplateLayoutCell) -- 自动计算UITableViewCell的高度并优化UITableView滚动（尚未亲自使用过）
 	* [MGSwipeTableCell](https://github.com/MortimerGoro/MGSwipeTableCell) -- 让UITableViewCell支持侧滑菜单（尚未亲自使用过）
 	* [XLForm](https://github.com/xmartlabs/XLForm) -- 表单库（尚未亲自使用过）
+	* [Form](https://github.com/hyperoslo/Form) -- 基于JSON构建表单（尚未亲自使用过）
 	* [RETableViewManager](https://github.com/romaonthego/RETableViewManager) -- 它可以十分方便地生成各种样式、各种功能的TableView（尚未亲自使用过）
 	* [UUChatTableView](https://github.com/ZhipingYang/UUChatTableView) -- 支持文本、图片以及音频的气泡聊天界面（尚未亲自使用过）
 	* [DZNEmptyDataSet](https://github.com/dzenbot/DZNEmptyDataSet) -- 专门用于处理UITableView或UICollectionView为空的情况（尚未亲自使用过）
-	* [FDStackView](https://github.com/forkingdog/FDStackView) -- 让iOS9之前的版本（最低支持iOS6）也支持UIStackView
-* HUD
+	* [FDStackView](https://github.com/forkingdog/FDStackView) -- 让iOS9之前的版本（最低支持iOS6）也支持UIStackView（尚未亲自使用过）
+
+* 进度指示器
 	* [MBProgressHUD](https://github.com/jdg/MBProgressHUD) -- loading提示
 	* [SVProgressHUD](https://github.com/samvermette/SVProgressHUD) -- 轻量级的loading提示
+	* [NVActivityIndicatorView](https://github.com/ninjaprox/NVActivityIndicatorView) -- 提供了29种loading动画效果（尚未亲自使用过）
+
 * 弹出框
-	* [MMPopupView](https://github.com/adad184/MMPopupView)
-	* [PSTAlertController](https://github.com/steipete/PSTAlertController) -- 可以兼容iOS7的UIAlertViewController
+	* [MMPopupView](https://github.com/adad184/MMPopupView) -- （尚未亲自使用过）
+	* [PSTAlertController](https://github.com/steipete/PSTAlertController) -- 可以兼容iOS7的UIAlertViewController（尚未亲自使用过）
+
 * 菜单
-	* [AwesomeMenu](https://github.com/levey/AwesomeMenu) -- 仿Path 2.0菜单
-	* [DCPathButton](https://github.com/Tangdixi/DCPathButton) -- 仿Path 4.0菜单
-	* [KYGooeyMenu](https://github.com/KittenYang/KYGooeyMenu) -- 带粘性的扇形菜单，动画效果很赞
-	* [LiquidFloatingActionButton](https://github.com/yoavlt/LiquidFloatingActionButton) -- 带粘性的线性菜单，动画效果与KYGooeyMenu类似
+	* [AwesomeMenu](https://github.com/levey/AwesomeMenu) -- 仿Path 2.0菜单（尚未亲自使用过）
+	* [DCPathButton](https://github.com/Tangdixi/DCPathButton) -- 仿Path 4.0菜单（尚未亲自使用过）
+	* [KYGooeyMenu](https://github.com/KittenYang/KYGooeyMenu) -- 带粘性的扇形菜单，动画效果很赞（尚未亲自使用过）
+	* [LiquidFloatingActionButton](https://github.com/yoavlt/LiquidFloatingActionButton) -- 带粘性的线性菜单，动画效果与KYGooeyMenu类似（尚未亲自使用过）
+
+* 日历
+	* [FSCalendar](https://github.com/WenchaoD/FSCalendar) -- （尚未亲自使用过）
+	* [CVCalendar](https://github.com/Mozharovsky/CVCalendar) -- 基于Swift 2.0，支持iOS8+（尚未亲自使用过）
+	* [JTCalendar](https://github.com/jonathantribouharet/JTCalendar) -- （尚未亲自使用过）
+	* [PDTSimpleCalendar](https://github.com/jivesoftware/PDTSimpleCalendar) -- 传说是最棒的日历组件（尚未亲自使用过）
+
+* 图片选择器
+	* [ImagePickerSheetController](https://github.com/larcus94/ImagePickerSheetController) -- action sheet风格的图片选择，基于Swift，支持iOS8+（尚未亲自使用过）
 
 
 <br>
