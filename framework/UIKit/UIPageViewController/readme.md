@@ -6,18 +6,30 @@
 
 
 
-**注意**
+### 注意
 
 * 要支持基于手势的导航，必须使用一个数据源对象来提供视图控制器。
 * 从iOS6以后，该类才可以被继承。
 
-<br>
 
+<br>
 ***
+<br>
+
+
+### 适用场景
+
+* 首次打开APP时的引导页
+* 读书软件的翻页
+
 
 <br>
+***
+<br>
+
 
 ### 参考资料
 
 * [如何使用Storyboard创建UIPageViewController](http://kyleduo.com/?p=278)
 * [UIPageViewController](http://www.cnblogs.com/breezemist/p/3494515.html)
+* [UIPageViewController的简介和注意事项](http://blog.qiji.tech/archives/8251)

@@ -110,8 +110,6 @@
 	* [AFNetworking](https://github.com/AFNetworking/AFNetworking) -- 处理网络请求
 * KVO
 	* [KVOController](https://github.com/facebook/KVOController) -- 简单、线程安全的KVO
-* 弹出层相关
-	* [SVProgressHUD](https://github.com/samvermette/SVProgressHUD) -- 各种提示层
 * 图表
 	* [PNChart](https://github.com/kevinzhow/PNChart) -- 图表库
 * 自动布局
@@ -125,6 +123,7 @@
 	* [UIScrollSlidingPages](https://github.com/TomThorpe/UIScrollSlidingPages) -- 页面级的tab切换（尚未亲自使用过）
 	* [DLSlideView](https://github.com/agdsdl/DLSlideView) -- 基于ViewController的container特性（而不是scrollview）来管理各个子页面，以支持无限分页（尚未亲自使用过）
 	* [WMPageController](https://github.com/wangmchn/WMPageController) -- 页面级的tab切换（尚未亲自使用过）
+	* [RKSwipeBetweenViewControllers](https://github.com/cwRichardKim/RKSwipeBetweenViewControllers) -- UIPageViewController和自定义UISegmentedControl的同步动画
 * UITableView相关
 	* [UITableView+FDTemplateLayoutCell](https://github.com/forkingdog/UITableView-FDTemplateLayoutCell) -- 自动计算UITableViewCell的高度并优化UITableView滚动（尚未亲自使用过）
 	* [MGSwipeTableCell](https://github.com/MortimerGoro/MGSwipeTableCell) -- 让UITableViewCell支持侧滑菜单（尚未亲自使用过）
@@ -133,6 +132,15 @@
 	* [UUChatTableView](https://github.com/ZhipingYang/UUChatTableView) -- 支持文本、图片以及音频的气泡聊天界面（尚未亲自使用过）
 	* [DZNEmptyDataSet](https://github.com/dzenbot/DZNEmptyDataSet) -- 专门用于处理UITableView或UICollectionView为空的情况（尚未亲自使用过）
 	* [FDStackView](https://github.com/forkingdog/FDStackView) -- 让iOS9之前的版本（最低支持iOS6）也支持UIStackView
+* HUD
+	* [MBProgressHUD](https://github.com/jdg/MBProgressHUD) -- loading提示
+	* [SVProgressHUD](https://github.com/samvermette/SVProgressHUD) -- 轻量级的loading提示
+* 弹出框
+	* [MMPopupView](https://github.com/adad184/MMPopupView)
+	* [PSTAlertController](https://github.com/steipete/PSTAlertController) -- 可以兼容iOS7的UIAlertViewController
+* 菜单
+	* [AwesomeMenu](https://github.com/levey/AwesomeMenu) -- 仿Path 2.0菜单
+	* [DCPathButton](https://github.com/Tangdixi/DCPathButton) -- 仿Path 4.0菜单
 
 <br>
 
