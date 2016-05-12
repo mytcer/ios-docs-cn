@@ -104,18 +104,32 @@
 
 ### 五. 优质第三方框架/库
 
-* 缓存相关
-	* [SDWebImage](https://github.com/rs/SDWebImage) -- 图片缓存
+* 响应式编程
+	* [RxSwift](https://github.com/ReactiveX/RxSwift) -- Swift版的响应式编程框架
+
+* 缓存
+	* [SDWebImage](https://github.com/rs/SDWebImage) -- 获取并缓存网络图片
+	* [Kingfisher](https://github.com/onevcat/Kingfisher) -- 获取并缓存网络图片，基于Swift
+	* [FastImageCache](https://github.com/path/FastImageCache) -- 高效、持久、快速的来存储和检索应用中的图像
+	* [EGOCache](https://github.com/enormego/EGOCache) -- 简单、线程安全的key/value缓存库，可缓存NSString、UIImage、NSImage、NSData及任何实现了`NSCoding`协议的对象
+	* [YYWebImage](https://github.com/ibireme/YYWebImage) -- 异步加载图片的库，支持APNG、WebP、GIF格式，支持支持渐进式图片加载
 
 * 网络相关
 	* [AFNetworking](https://github.com/AFNetworking/AFNetworking) -- 网络连接库
 	* [Alamofire](https://github.com/Alamofire/Alamofire) -- Swift版的网络连接库
 	* [socket.io-client-swift](https://github.com/socketio/socket.io-client-swift) -- WebSockect客户端类库，支持Objective-C & Swift，要求iOS8+
+	* [starscream](https://github.com/daltoniam/starscream) -- Swift版的WebSocket库
 	* [CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket) -- 异步socket网络库
 
 * 消息通信
 	* [KVOController](https://github.com/facebook/KVOController) -- 简单、线程安全的KVO
 	* [MMWormhole](https://github.com/mutualmobile/MMWormhole) -- 用于实现宿主应用和扩展之间的通信（基于`app groups`实现）
+
+* IM
+	* [XMPPFramework](https://github.com/robbiehanson/XMPPFramework) -- 基于XMPP协议的IM框架
+	* [JSQMessagesViewController](https://github.com/jessesquires/JSQMessagesViewController) -- 一个优雅地聊天UI库
+	* [ChatSecure-iOS](https://github.com/ChatSecure/ChatSecure-iOS) -- 一个开源的即时通讯客户端（适合学习源码）
+	* [MessageDisplayKit](https://github.com/xhzengAIB/MessageDisplayKit) -- 一个类似微信的IM应用
 
 * Crash Reporter
 	* [KSCrash](https://github.com/kstenerud/KSCrash)
@@ -194,9 +208,12 @@
 * 圆角
 	* [HYBImageCliped](https://github.com/CoderJackyHuang/HYBImageCliped)
 
+* 动画
+	* [JazzHands](https://github.com/IFTTT/JazzHands) -- 基于关键帧的动画框架
+	* [awesome-ios-animation](https://github.com/sxyx2008/awesome-ios-animation) -- 各种动画库的集合
+
 * 其他
 	* [AsyncDisplayKit](https://github.com/facebook/AsyncDisplayKit) -- facebook出品的一个基于Swift的框架，用于确保用户界面的流畅与快速，即使是很复杂的用户界面。
-	* [awesome-ios-animation](https://github.com/sxyx2008/awesome-ios-animation) -- 各种动画库
 
 
 <br>
