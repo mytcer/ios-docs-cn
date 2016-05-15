@@ -104,6 +104,13 @@
 
 ### 五. 优质第三方框架/库
 
+* Model
+	* [JSONModel](https://github.com/icanzilb/JSONModel) -- 将JSON模型化为OC对象
+	* [Mantle](https://github.com/Mantle/Mantle) -- 将JSON模型化为OC对象，适合大系统使用
+	* [MJExtension](https://github.com/CoderMJLee/MJExtension) -- 使用简单的字典转模型框架
+	* [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON) -- 使Swift的JSON解析变得简单
+	* [YYModel](https://github.com/ibireme/YYModel) -- 高性能的model框架
+
 * 响应式编程
 	* [RxSwift](https://github.com/ReactiveX/RxSwift) -- Swift版的响应式编程框架
 
