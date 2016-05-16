@@ -1,28 +1,17 @@
 # ios-docs-cn
 
-
-### 一. Xcode
-
-* [使用技巧及相关资源](./xcode/readme.md)
-
-<br>
-
-***
-
-<br>
-
-### 二. 语言
+### 一. 语言
 
 * [Objective-C](./objc/readme.md)
 * [Swift](./swift/readme.md)
 
-<br>
 
+<br>
 ***
-
 <br>
 
-### 三. 系统框架
+
+### 二. 系统框架
 
 * Cocoa Touch Layer
 	* [AddressBookUI](./framework/AddressBookUI)
@@ -85,24 +74,23 @@
 	* CoreBluetooth
 	* LocalAuthentication
 
-<br>
 
+<br>
 ***
-
 <br>
 
-### 四. 系统特性
 
-* [App Extension](./AppExtension)
-* [Handoff](./Handoff)
+### 三. 优质第三方框架/库
 
-<br>
+* 响应式编程
+	* [RxSwift](https://github.com/ReactiveX/RxSwift) -- Swift版的响应式编程框架
 
-***
-
-<br>
-
-### 五. 优质第三方框架/库
+* 网络相关
+	* [AFNetworking](https://github.com/AFNetworking/AFNetworking) -- 网络连接库
+	* [Alamofire](https://github.com/Alamofire/Alamofire) -- Swift版的网络连接库
+	* [socket.io-client-swift](https://github.com/socketio/socket.io-client-swift) -- WebSockect客户端类库，支持Objective-C & Swift，要求iOS8+
+	* [starscream](https://github.com/daltoniam/starscream) -- Swift版的WebSocket库
+	* [CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket) -- 异步socket网络库
 
 * Model
 	* [JSONModel](https://github.com/icanzilb/JSONModel) -- 将JSON模型化为OC对象
@@ -119,22 +107,15 @@
 	* [MagicalRecord](https://github.com/magicalpanda/MagicalRecord) -- 号称CoreData第一库，用于简化CoreData的使用。
 		* [深入浅出MagicalRecord](http://childhood.logdown.com/posts/208957/easy-magicalrecord-01)
 
-* 响应式编程
-	* [RxSwift](https://github.com/ReactiveX/RxSwift) -- Swift版的响应式编程框架
-
-* 缓存
-	* [SDWebImage](https://github.com/rs/SDWebImage) -- 获取并缓存网络图片
-	* [Kingfisher](https://github.com/onevcat/Kingfisher) -- 获取并缓存网络图片，基于Swift
-	* [FastImageCache](https://github.com/path/FastImageCache) -- 高效、持久、快速的来存储和检索应用中的图像
-	* [EGOCache](https://github.com/enormego/EGOCache) -- 简单、线程安全的key/value缓存库，可缓存NSString、UIImage、NSImage、NSData及任何实现了`NSCoding`协议的对象
-	* [YYWebImage](https://github.com/ibireme/YYWebImage) -- 异步加载图片的库，支持APNG、WebP、GIF格式，支持支持渐进式图片加载
-
-* 网络相关
-	* [AFNetworking](https://github.com/AFNetworking/AFNetworking) -- 网络连接库
-	* [Alamofire](https://github.com/Alamofire/Alamofire) -- Swift版的网络连接库
-	* [socket.io-client-swift](https://github.com/socketio/socket.io-client-swift) -- WebSockect客户端类库，支持Objective-C & Swift，要求iOS8+
-	* [starscream](https://github.com/daltoniam/starscream) -- Swift版的WebSocket库
-	* [CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket) -- 异步socket网络库
+* 缓存相关
+	* 图像
+		* [SDWebImage](https://github.com/rs/SDWebImage) -- 获取并缓存网络图片
+		* [FastImageCache](https://github.com/path/FastImageCache) -- 高效、持久、快速的来存储和检索应用中的图像
+		* [YYWebImage](https://github.com/ibireme/YYWebImage) -- 异步加载图片的库，支持APNG、WebP、GIF格式，支持支持渐进式图片加载
+		* [Kingfisher](https://github.com/onevcat/Kingfisher) -- 获取并缓存网络图片，基于Swift
+	* 通用
+		* [EGOCache](https://github.com/enormego/EGOCache) -- 简单、线程安全的key/value缓存库，可缓存NSString、UIImage、NSImage、NSData及任何实现了`NSCoding`协议的对象
+		* [HanekeSwift](https://github.com/Haneke/HanekeSwift) -- 一个基于Swift的轻量级通用缓存库
 
 * 消息通信
 	* [KVOController](https://github.com/facebook/KVOController) -- 简单、线程安全的KVO
@@ -145,6 +126,10 @@
 	* [JSQMessagesViewController](https://github.com/jessesquires/JSQMessagesViewController) -- 一个优雅地聊天UI库
 	* [ChatSecure-iOS](https://github.com/ChatSecure/ChatSecure-iOS) -- 一个开源的即时通讯客户端（适合学习源码）
 	* [MessageDisplayKit](https://github.com/xhzengAIB/MessageDisplayKit) -- 一个类似微信的IM应用
+
+* Keychain
+	* [SSKeychain](https://github.com/soffes/sskeychain) -- 它对系统Keychain进行了简单包装，用于访问账户，获取、设置、删除密码。
+	* [KeychainAccess](https://github.com/kishikawakatsumi/KeychainAccess) -- 它对系统Keychain进行简单包装，基于Swift。
 
 * Crash Reporter
 	* [KSCrash](https://github.com/kstenerud/KSCrash)
@@ -203,8 +188,12 @@
 	* [JTCalendar](https://github.com/jonathantribouharet/JTCalendar) -- 
 	* [PDTSimpleCalendar](https://github.com/jivesoftware/PDTSimpleCalendar) -- 传说是最棒的日历组件
 
-* 图片选择器
+* 图像浏览
 	* [ImagePickerSheetController](https://github.com/larcus94/ImagePickerSheetController) -- action sheet风格的图片选择，基于Swift，支持iOS8+
+	* [MWPhotoBrowser](https://github.com/mwaterfall/MWPhotoBrowser) -- 一个基于网格视图的照片和视频选择器
+
+* 图像处理
+	* [CLImageEditor](https://github.com/yackle/CLImageEditor) -- 一个图像编辑库
 
 * badge
 	* [RKNotificationHub](https://github.com/cwRichardKim/RKNotificationHub) -- 快速给任何UIView添加badge
@@ -236,7 +225,7 @@
 <br>
 
 
-### 六. 优质技术资料
+### 四. 优质技术资料
 
 * [iOS技术概览中文版](./resource/iOS技术概览.pdf)
 * [iOS Provisioning Profile(Certificate)与Code Signing详解](http://blog.csdn.net/phunxm/article/details/42685597)
@@ -254,7 +243,7 @@
 <br>
 
 
-### 七. 好工具
+### 五. 好工具
 
 * [appetize.io](https://appetize.io/) -- 一个为iOS和Android提供APP在线演示的网站，只要将你的demo程序上传到appetize.io，就可以直接在网页上运行你的demo。
 * [Cocoa Controls](https://www.cocoacontrols.com/) -- 你可以在这里找到大量针对iOS和Mac OS X开发的GUI控件，并且大部分资源是免费使用的。
@@ -265,6 +254,6 @@
 <br>
 
 
-### 八. 其他优质资源
+### 六. 其他优质资源
 
 * [apistore](http://apistore.baidu.com/astore/index) -- 各种开放API的聚集地
