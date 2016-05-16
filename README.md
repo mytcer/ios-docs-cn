@@ -111,6 +111,14 @@
 	* [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON) -- 使Swift的JSON解析变得简单
 	* [YYModel](https://github.com/ibireme/YYModel) -- 高性能的model框架
 
+* 数据库
+	* [FMDB](https://github.com/ccgus/fmdb) -- 对SQLite的Objective-C封装
+	* [SQLite.swift](https://github.com/stephencelis/SQLite.swift) -- 纯swift实现的类型安全的SQLite3封装
+	* [Realm](https://github.com/realm/realm-cocoa) -- 专为移动设备打造的数据库，使用简单、支持Objective-C和Swift、跨平台，其宣称在移动设备上的性能表现要好于Sqlite
+		* [官方中文介绍](https://realm.io/cn/)
+	* [MagicalRecord](https://github.com/magicalpanda/MagicalRecord) -- 号称CoreData第一库，用于简化CoreData的使用。
+		* [深入浅出MagicalRecord](http://childhood.logdown.com/posts/208957/easy-magicalrecord-01)
+
 * 响应式编程
 	* [RxSwift](https://github.com/ReactiveX/RxSwift) -- Swift版的响应式编程框架
 
