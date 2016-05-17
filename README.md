@@ -173,9 +173,10 @@
 	* [MBProgressHUD](https://github.com/jdg/MBProgressHUD) -- loading提示
 	* [SVProgressHUD](https://github.com/samvermette/SVProgressHUD) -- 轻量级的loading提示
 	* [NVActivityIndicatorView](https://github.com/ninjaprox/NVActivityIndicatorView) -- 提供了29种loading动画效果
+	* [JDStatusBarNotification](https://github.com/jaydee3/JDStatusBarNotification) -- 显示在状态栏顶部的通知，可以自定义颜色字体以及动画，支持进度显示以及显示状态指示器。
 
 * 弹出框
-	* [MMPopupView](https://github.com/adad184/MMPopupView) -- 
+	* [MMPopupView](https://github.com/adad184/MMPopupView)
 	* [PSTAlertController](https://github.com/steipete/PSTAlertController) -- 可以兼容iOS7的UIAlertViewController
 	* [STPopup](https://github.com/kevin0571/STPopup) -- 支持内容导航的弹框
 
@@ -221,6 +222,11 @@
 * 动画
 	* [JazzHands](https://github.com/IFTTT/JazzHands) -- 基于关键帧的动画框架
 	* [awesome-ios-animation](https://github.com/sxyx2008/awesome-ios-animation) -- 各种动画库的集合
+
+* 密码相关
+	* [CoreLock](https://github.com/CharlinFeng/CoreLock) -- 高仿支付宝手势密码
+	* [CryptoSwift](https://github.com/krzyzanowskim/CryptoSwift) -- 基于Swift的加密库，支持多种加密方式
+	* [OAuthSwift](https://github.com/OAuthSwift/OAuthSwift) -- 基于Swift的OAuth授权类库
 
 * 其他
 	* [AsyncDisplayKit](https://github.com/facebook/AsyncDisplayKit) -- facebook出品的一个基于Swift的框架，用于确保用户界面的流畅与快速，即使是很复杂的用户界面。
