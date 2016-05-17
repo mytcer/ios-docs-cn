@@ -82,7 +82,7 @@
 
 ### 三. 优质第三方框架/库
 
-* 响应式编程
+* 函数响应式编程
 	* [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa)
 		* [ReactiveCocoa入门教程：第一部分](http://www.cocoachina.com/industry/20140707/9053.html)
 		* [Reactive Cocoa 3.0在MVVM中的应用](http://ios.jobbole.com/82232/)
