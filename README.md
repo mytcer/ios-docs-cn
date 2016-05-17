@@ -83,7 +83,11 @@
 ### 三. 优质第三方框架/库
 
 * 响应式编程
-	* [RxSwift](https://github.com/ReactiveX/RxSwift) -- Swift版的响应式编程框架
+	* [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa)
+		* [ReactiveCocoa入门教程：第一部分](http://www.cocoachina.com/industry/20140707/9053.html)
+		* [Reactive Cocoa 3.0在MVVM中的应用](http://ios.jobbole.com/82232/)
+		* [快速让你上手ReactiveCocoa之基础篇](http://www.jianshu.com/p/87ef6720a096)
+	* [RxSwift](https://github.com/ReactiveX/RxSwift) -- 基于Swift
 
 * 网络相关
 	* [AFNetworking](https://github.com/AFNetworking/AFNetworking) -- 网络连接库
@@ -193,7 +197,9 @@
 	* [MWPhotoBrowser](https://github.com/mwaterfall/MWPhotoBrowser) -- 一个基于网格视图的照片和视频选择器
 
 * 图像处理
-	* [CLImageEditor](https://github.com/yackle/CLImageEditor) -- 一个图像编辑库
+	* [GPUImage](https://github.com/BradLarson/GPUImage) -- 它是一个基于GPU的图像和视频处理框架，提供各种各样的图像处理滤镜，并且支持照相机和摄像机的实时滤镜，还支持自定义滤镜。[Swift版本](https://github.com/BradLarson/GPUImage2)
+		* [GPUImage简单滤镜使用（一）](http://www.cnblogs.com/salam/p/4980992.html)
+		* [GPUImage简单滤镜使用（二）](http://www.cnblogs.com/salam/p/4981276.html)
 
 * badge
 	* [RKNotificationHub](https://github.com/cwRichardKim/RKNotificationHub) -- 快速给任何UIView添加badge
@@ -218,6 +224,7 @@
 
 * 其他
 	* [AsyncDisplayKit](https://github.com/facebook/AsyncDisplayKit) -- facebook出品的一个基于Swift的框架，用于确保用户界面的流畅与快速，即使是很复杂的用户界面。
+	* [BeeFramework](https://github.com/gavinkwoe/BeeFramework) -- 一个半混合框架，允许你使用Objective-C和XML/CSS来创建移动应用。
 
 
 <br>
