@@ -82,6 +82,9 @@
 
 ### 三. 优质第三方框架/库
 
+* 语言相关
+	* [libextobjc](https://github.com/jspahrsummers/libextobjc) -- 一个扩展Objective-C的Cocoa库
+
 * 函数响应式编程
 	* [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa)
 		* [ReactiveCocoa入门教程：第一部分](http://www.cocoachina.com/industry/20140707/9053.html)
@@ -120,6 +123,9 @@
 	* 通用
 		* [EGOCache](https://github.com/enormego/EGOCache) -- 简单、线程安全的key/value缓存库，可缓存NSString、UIImage、NSImage、NSData及任何实现了`NSCoding`协议的对象
 		* [HanekeSwift](https://github.com/Haneke/HanekeSwift) -- 一个基于Swift的轻量级通用缓存库
+
+* 数据压缩
+	* [GZIP](https://github.com/nicklockwood/GZIP) -- 一个简单的NSData扩展，用于gzipping/unzipping数据
 
 * 消息通信
 	* [KVOController](https://github.com/facebook/KVOController) -- 简单、线程安全的KVO
@@ -169,13 +175,14 @@
 	* [FDStackView](https://github.com/forkingdog/FDStackView) -- 让iOS9之前的版本（最低支持iOS6）也支持UIStackView
 	* [TZStackView](https://github.com/tomvanzummeren/TZStackView) -- 让iOS9之前的版本（最低支持iOS6）也支持UIStackView，基于Swift
 
-* 进度指示器
+* 弹出层
 	* [MBProgressHUD](https://github.com/jdg/MBProgressHUD) -- loading提示
 	* [SVProgressHUD](https://github.com/samvermette/SVProgressHUD) -- 轻量级的loading提示
 	* [NVActivityIndicatorView](https://github.com/ninjaprox/NVActivityIndicatorView) -- 提供了29种loading动画效果
 	* [JDStatusBarNotification](https://github.com/jaydee3/JDStatusBarNotification) -- 显示在状态栏顶部的通知，可以自定义颜色字体以及动画，支持进度显示以及显示状态指示器。
+	* [Toast](https://github.com/scalessec/Toast) -- 一个用于显示提示信息的UIView扩展
 
-* 弹出框
+* 对话框
 	* [MMPopupView](https://github.com/adad184/MMPopupView)
 	* [PSTAlertController](https://github.com/steipete/PSTAlertController) -- 可以兼容iOS7的UIAlertViewController
 	* [STPopup](https://github.com/kevin0571/STPopup) -- 支持内容导航的弹框
@@ -215,6 +222,7 @@
 * 控件
 	* [BEMCheckBox](https://github.com/Boris-Em/BEMCheckBox) -- 支持多种不同风格动画效果的复选框
 	* [DGRunkeeperSwitch](https://github.com/gontovnik/DGRunkeeperSwitch) -- 带动画效果的segment control，基于Swift
+	* [HMSegmentedControl](https://github.com/HeshamMegid/HMSegmentedControl) -- UISegmentedControl的替代和增强
 
 * 圆角
 	* [HYBImageCliped](https://github.com/CoderJackyHuang/HYBImageCliped)
@@ -228,9 +236,17 @@
 	* [CryptoSwift](https://github.com/krzyzanowskim/CryptoSwift) -- 基于Swift的加密库，支持多种加密方式
 	* [OAuthSwift](https://github.com/OAuthSwift/OAuthSwift) -- 基于Swift的OAuth授权类库
 
+* 云端存储
+	* [AliyunOSSiOS](https://github.com/sunyunfei/aliyun-oss-ios-sdk) -- 阿里云OSS iOS SDK
+
+* 应用内置浏览器
+	* [DZNWebViewController](https://github.com/dzenbot/DZNWebViewController) -- 它是一个简单的iPhone & iPad浏览器，功能非常类似于Safari，它基于WebKit构建，拥有导航控件和上下文特性，适合在app内进行web浏览，可以被子类化和扩展，适用iOS8+。
+	* [TOWebViewController](https://github.com/TimOliver/TOWebViewController) -- 基于UIWebView实现
+
 * 其他
 	* [AsyncDisplayKit](https://github.com/facebook/AsyncDisplayKit) -- facebook出品的一个基于Swift的框架，用于确保用户界面的流畅与快速，即使是很复杂的用户界面。
 	* [BeeFramework](https://github.com/gavinkwoe/BeeFramework) -- 一个半混合框架，允许你使用Objective-C和XML/CSS来创建移动应用。
+	* [appirater](https://github.com/arashpayan/appirater) -- 它提醒用户在打开App时，对应用进行评论或打分。
 
 
 <br>
