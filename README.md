@@ -1,9 +1,13 @@
 # ios-docs-cn
 
-### 一. 语言
+### 一. 学习笔记
 
-* [Objective-C](./objc/readme.md)
-* [Swift](./swift/readme.md)
+* [类与元类](./articles/类与元类.md)
+* [Apple移动设备处理器指令集说明](./articles/Apple移动设备处理器指令集说明.md)
+* [iOS应用程序生命周期](./articles/iOS应用程序生命周期.md)
+* [UIViewController的生命周期](./articles/UIViewController的生命周期.md)
+* [iOS手势详解](./articles/iOS手势详解.md)
+* [frame与bounds的区别](./articles/frame与bounds的区别.md)
 
 
 <br>

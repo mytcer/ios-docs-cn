@@ -9,11 +9,11 @@
 * UIRotationGestureRecognizer -- 旋转手势
 * UILongPressGestureRecognizer -- 长按手势
 
-<br>
 
+<br>
 ***
-
 <br>
+
 
 ### 二. 手势的类型
 
@@ -23,11 +23,11 @@
 
 * 离散手势的手势识别器只会发送一次消息给它的目标；而连续手势的手势识别器会持续发送消息给目标，直到触摸序列停止。
 
-<br>
 
+<br>
 ***
-
 <br>
+
 
 ### 三. 手势识别状态
 
@@ -59,10 +59,9 @@
 
 
 <br>
-
 ***
-
 <br>
+
 
 ### 四. 将手势与view关联
 
@@ -80,11 +79,11 @@ panGestureRecognizer.minimumNumberOfTouches = 2;
 
 ```
 
-<br>
 
+<br>
 ***
-
 <br>
+
 
 ### 五. 参考资料
 
