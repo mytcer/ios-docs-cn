@@ -236,6 +236,9 @@
 	* [JazzHands](https://github.com/IFTTT/JazzHands) -- 基于关键帧的动画框架
 	* [awesome-ios-animation](https://github.com/sxyx2008/awesome-ios-animation) -- 各种动画库的集合
 
+* 幻灯片
+	* [SwipeView](https://github.com/nicklockwood/SwipeView) -- 基于UIScrollView的水平滚动分页视图
+
 * 密码相关
 	* [CoreLock](https://github.com/CharlinFeng/CoreLock) -- 高仿支付宝手势密码
 	* [CryptoSwift](https://github.com/krzyzanowskim/CryptoSwift) -- 基于Swift的加密库，支持多种加密方式
