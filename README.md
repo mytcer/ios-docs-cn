@@ -4,6 +4,7 @@
 
 * [类与元类](./articles/类与元类.md)
 * [Apple移动设备处理器指令集说明](./articles/Apple移动设备处理器指令集说明.md)
+* [iOS沙盒机制](./articles/iOS沙盒机制.md)
 * [iOS应用程序生命周期](./articles/iOS应用程序生命周期.md)
 * [UIViewController的生命周期](./articles/UIViewController的生命周期.md)
 * [iOS手势详解](./articles/iOS手势详解.md)
@@ -260,7 +261,6 @@
 
 ### 四. 优质技术资料
 
-* [iOS技术概览中文版](./resource/iOS技术概览.pdf)
 * [iOS Provisioning Profile(Certificate)与Code Signing详解](http://blog.csdn.net/phunxm/article/details/42685597)
 * [漫谈iOS程序的证书和签名机制](http://www.pchou.info/ios/2015/12/14/ios-certification-and-code-sign.html)
 * [Cocoa编码规范](http://www.cocoachina.com/ios/20150908/13335.html)
