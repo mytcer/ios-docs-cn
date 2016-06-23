@@ -8,7 +8,8 @@
 * [iOS应用程序生命周期](./articles/iOS应用程序生命周期.md)
 * [UIViewController的生命周期](./articles/UIViewController的生命周期.md)
 * [iOS手势详解](./articles/iOS手势详解.md)
-* [frame与bounds的区别](./articles/frame与bounds的区别.md)
+* Xcode
+	* [Xcode本地构建包无法查看变量值的解决办法](./articles/Xcode本地构建包无法查看变量值的解决办法.md)
 
 
 <br>
@@ -123,7 +124,8 @@
 	* 图像
 		* [SDWebImage](https://github.com/rs/SDWebImage) -- 获取并缓存网络图片
 		* [FastImageCache](https://github.com/path/FastImageCache) -- 高效、持久、快速的来存储和检索应用中的图像
-		* [YYWebImage](https://github.com/ibireme/YYWebImage) -- 异步加载图片的库，支持APNG、WebP、GIF格式，支持支持渐进式图片加载
+		* [YYWebImage](https://github.com/ibireme/YYWebImage) -- 异步加载图片的框架，支持APNG、WebP、GIF格式，支持支持渐进式图片加载
+		* [YYImage](https://github.com/ibireme/YYImage) -- 一个显示、编码、解码图片的框架，支持WebP, APNG, GIF等格式
 		* [Kingfisher](https://github.com/onevcat/Kingfisher) -- 获取并缓存网络图片，基于Swift
 	* 通用
 		* [EGOCache](https://github.com/enormego/EGOCache) -- 简单、线程安全的key/value缓存库，可缓存NSString、UIImage、NSImage、NSData及任何实现了`NSCoding`协议的对象
@@ -146,8 +148,8 @@
 	* [SSKeychain](https://github.com/soffes/sskeychain) -- 它对系统Keychain进行了简单包装，用于访问账户，获取、设置、删除密码。
 	* [KeychainAccess](https://github.com/kishikawakatsumi/KeychainAccess) -- 它对系统Keychain进行简单包装，基于Swift。
 
-* Crash Reporter
-	* [KSCrash](https://github.com/kstenerud/KSCrash)
+* Crash监控
+	* [bugtags](https://www.bugtags.com) -- 挺不错的一个应用Crash监控工具，SDK有免费版与收费版。
 
 * 图表
 	* [PNChart](https://github.com/kevinzhow/PNChart) -- 图表库
@@ -255,6 +257,9 @@
 	* [AsyncDisplayKit](https://github.com/facebook/AsyncDisplayKit) -- facebook出品的一个基于Swift的框架，用于确保用户界面的流畅与快速，即使是很复杂的用户界面。
 	* [BeeFramework](https://github.com/gavinkwoe/BeeFramework) -- 一个半混合框架，允许你使用Objective-C和XML/CSS来创建移动应用。
 	* [appirater](https://github.com/arashpayan/appirater) -- 它提醒用户在打开App时，对应用进行评论或打分。
+
+* Promise
+	* [PromiseKit](https://github.com/mxcl/PromiseKit) -- 支持Objective-C和Swift
 
 
 <br>
