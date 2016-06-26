@@ -268,7 +268,20 @@
 <br>
 
 
-### 四. 优质技术资料
+### 四. 优质的Xcode插件
+
+* [Alcatraz](https://github.com/supermarin/Alcatraz) -- Xcode插件管理器，基于它可以很方便地搜索和管理插件
+* VVDocumenter -- 快速添加代码注释的插件（注：只需在想添加注释的地方输入`///`，即可自动生成注释），可在`Alcatraz`中搜索安装
+* KSImageNamed -- 可以帮助你快速的输入本地图像文件名（输入时带有自动完成），可在`Alcatraz`中搜索安装
+* MCLog -- 过滤Xcode控制台日志的输出，可在`Alcatraz`中搜索安装
+
+
+<br>
+***
+<br>
+
+
+### 五. 优质技术资料
 
 * [iOS Provisioning Profile(Certificate)与Code Signing详解](http://blog.csdn.net/phunxm/article/details/42685597)
 * [漫谈iOS程序的证书和签名机制](http://www.pchou.info/ios/2015/12/14/ios-certification-and-code-sign.html)
@@ -285,7 +298,7 @@
 <br>
 
 
-### 五. 好工具
+### 六. 好工具
 
 * [appetize.io](https://appetize.io/) -- 一个为iOS和Android提供APP在线演示的网站，只要将你的demo程序上传到appetize.io，就可以直接在网页上运行你的demo。
 * [Cocoa Controls](https://www.cocoacontrols.com/) -- 你可以在这里找到大量针对iOS和Mac OS X开发的GUI控件，并且大部分资源是免费使用的。
@@ -296,6 +309,6 @@
 <br>
 
 
-### 六. 其他优质资源
+### 七. 其他优质资源
 
 * [apistore](http://apistore.baidu.com/astore/index) -- 各种开放API的聚集地
