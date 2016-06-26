@@ -148,9 +148,6 @@
 	* [SSKeychain](https://github.com/soffes/sskeychain) -- 它对系统Keychain进行了简单包装，用于访问账户，获取、设置、删除密码。
 	* [KeychainAccess](https://github.com/kishikawakatsumi/KeychainAccess) -- 它对系统Keychain进行简单包装，基于Swift。
 
-* Crash监控
-	* [bugtags](https://www.bugtags.com) -- 挺不错的一个应用Crash监控工具，SDK有免费版与收费版。
-
 * 图表
 	* [PNChart](https://github.com/kevinzhow/PNChart) -- 图表库
 
@@ -258,9 +255,13 @@
 	* [BeeFramework](https://github.com/gavinkwoe/BeeFramework) -- 一个半混合框架，允许你使用Objective-C和XML/CSS来创建移动应用。
 	* [appirater](https://github.com/arashpayan/appirater) -- 它提醒用户在打开App时，对应用进行评论或打分。
 
-* Promise
-	* [PromiseKit](https://github.com/mxcl/PromiseKit) -- 支持Objective-C和Swift
+* 代码组织
+	* [PromiseKit](https://github.com/mxcl/PromiseKit) -- Promise for iOS，支持Objective-C和Swift
+	* [BlocksKit](https://github.com/zwaldowski/BlocksKit) -- 让许多系统类支持Block，简化编码
 
+* 工具
+	* [Reveal](http://revealapp.com) -- APP UI 调试工具，[使用说明](http://www.jianshu.com/p/290af2bf5afb)
+	* [bugtags](https://www.bugtags.com) -- APP crash的自动收集、分析及监控工具，其SDK有免费版与收费版。
 
 <br>
 ***
