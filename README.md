@@ -281,6 +281,7 @@
 * KSImageNamed -- 可以帮助你快速的输入本地图像文件名（输入时带有自动完成），可在`Alcatraz`中搜索安装
 * MCLog -- 过滤Xcode控制台日志的输出，可在`Alcatraz`中搜索安装
 * ObjectGraph -- 绘制类的关系图（需通过brew安装graphviz：`brew install graphviz`），可在`Alcatraz`中搜索安装
+* [InjectionPlugin](https://github.com/johnno1962/injectionforxcode) -- 在不重新打包应用的情况下，实时显示修改结果，极大地提高开发效率，可在`Alcatraz`中搜索安装
 
 
 <br>
