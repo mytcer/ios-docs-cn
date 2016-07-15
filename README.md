@@ -250,22 +250,24 @@
 	* [DZNWebViewController](https://github.com/dzenbot/DZNWebViewController) -- 它是一个简单的iPhone & iPad浏览器，功能非常类似于Safari，它基于WebKit构建，拥有导航控件和上下文特性，适合在app内进行web浏览，可以被子类化和扩展，适用iOS8+。
 	* [TOWebViewController](https://github.com/TimOliver/TOWebViewController) -- 基于UIWebView实现
 
-* 其他
-	* [AsyncDisplayKit](https://github.com/facebook/AsyncDisplayKit) -- facebook出品的一个基于Swift的框架，用于确保用户界面的流畅与快速，即使是很复杂的用户界面。
-	* [BeeFramework](https://github.com/gavinkwoe/BeeFramework) -- 一个半混合框架，允许你使用Objective-C和XML/CSS来创建移动应用。
-	* [appirater](https://github.com/arashpayan/appirater) -- 它提醒用户在打开App时，对应用进行评论或打分。
-
 * 代码组织
 	* [PromiseKit](https://github.com/mxcl/PromiseKit) -- Promise for iOS，支持Objective-C和Swift
 	* [BlocksKit](https://github.com/zwaldowski/BlocksKit) -- 让许多系统类支持Block，简化编码
+
+* 标签列表
+	* [SKTagView](https://github.com/zsk425/SKTagView)
+	* [AMTagListView](https://github.com/andreamazz/AMTagListView)
+
+* 键盘处理
+	* [IQKeyboardManager](https://github.com/hackiftekhar/IQKeyboardManager)
 
 * 工具
 	* [Reveal](http://revealapp.com) -- APP UI 调试工具，[使用说明](http://www.jianshu.com/p/290af2bf5afb)
 	* [bugtags](https://www.bugtags.com) -- APP crash的自动收集、分析及监控工具，其SDK有免费版与收费版。
 
-* 标签列表
-	* [SKTagView](https://github.com/zsk425/SKTagView)
-	* [AMTagListView](https://github.com/andreamazz/AMTagListView)
+* 其他
+	* [AsyncDisplayKit](https://github.com/facebook/AsyncDisplayKit) -- facebook出品的一个基于Swift的框架，用于确保用户界面的流畅与快速，即使是很复杂的用户界面。
+	* [appirater](https://github.com/arashpayan/appirater) -- 它提醒用户在打开App时，对应用进行评论或打分。
 
 <br>
 ***
@@ -278,6 +280,7 @@
 * VVDocumenter -- 快速添加代码注释的插件（注：只需在想添加注释的地方输入`///`，即可自动生成注释），可在`Alcatraz`中搜索安装
 * KSImageNamed -- 可以帮助你快速的输入本地图像文件名（输入时带有自动完成），可在`Alcatraz`中搜索安装
 * MCLog -- 过滤Xcode控制台日志的输出，可在`Alcatraz`中搜索安装
+* ObjectGraph -- 绘制类的关系图（需通过brew安装graphviz：`brew install graphviz`），可在`Alcatraz`中搜索安装
 
 
 <br>
