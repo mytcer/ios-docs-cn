@@ -118,3 +118,83 @@ dispatch_queue_t targetQueue = dispatch_queue_create("com.tcer.testQueue3", NULL
 dispatch_set_target_queue(originQueue1, targetQueue);
 dispatch_set_target_queue(originQueue2, targetQueue);
 ```
+
+<br>
+***
+<br>
+
+
+### 五. 在指定时间后执行处理
+
+可以通过`dispatch_after`函数，在指定时间追加处理到Dispatch Queue（注：不是在指定时间后执行处理）：
+
+```
+// 3秒后，将block追加到主队列
+// 注意：因为主队列在主线程的RunLoop中执行，所以block最快在3秒后执行，并且在主队列有大量处理追加或主线程的处理本身有延迟时，
+// 这个时间会更长。
+dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, 3ull * NSEC_PER_SEC);
+dispatch_after(time, dispatch_get_main_queue(), ^{...});
+```
+
+<br>
+***
+<br>
+
+
+### 六. 获取指定时间后的时间
+
+可以通过`dispatch_time`函数，获取从指定时间开始，指定时间后的相对时间：
+
+```
+dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, 3ull * NSEC_PER_SEC);
+```
+
+* DISPATCH_TIME_NOW，它表示现在的时间。
+* ull，即`unsigned long long`，是C语言的数值字面量。
+* NSEC_PER_SEC表示秒数，NSEC_PER_NSEC表示毫秒。
+* dispatch_walltime函数用于计算绝对时间
+
+
+<br>
+***
+<br>
+
+
+### 七. 等待多个并行处理结束后，再执行指定处理
+
+1. 通过Dispatch Group与dispatch_group_notify来实现
+
+```
+dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+// 创建group
+dispatch_group_t group = dispatch_group_create(); 
+// 将指定的block追加到queue中，该block属于指定的group
+dispatch_group_async(group, queue, ^{...}); 
+dispatch_group_async(group, queue, ^{...});
+dispatch_group_async(group, queue, ^{...});
+// 在追加到group中的处理都结束时，将block追加到主队列中
+dispatch_group_notify(group, dispatch_get_main_queue(), ^{...});
+dispatch_release(group);
+```
+
+2. 通过Dispatch Group与dispatch_group_wait来实现
+
+```
+dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+dispatch_group_t group = dispatch_group_create(); 
+dispatch_group_async(group, queue, ^{...}); 
+dispatch_group_async(group, queue, ^{...});
+dispatch_group_async(group, queue, ^{...});
+// 等待追加到group中的处理执行结束
+long result = dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
+dispatch_release(group);
+```
+
+* DISPATCH_TIME_FOREVER，意味着永久等待，只要group中的处理尚未执行结束，就会一直等待，中途不能取消。
+* DISPATCH_TIME_NOW，意味着不用等待即可判定追加到group中的处理是否执行结束。
+* 如果dispatch_group_wait函数的返回不为0，就意味着虽然经过了指定的时间，但属于group的某一个处理还在执行中。如果返回值为0，
+那么说明全部处理执行结束。
+* 当等待时间为DISPATCH_TIME_FOREVER时，dispatch_group_wait函数的返回值恒为0。
+
+
+
