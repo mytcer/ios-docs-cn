@@ -17,76 +17,7 @@
 <br>
 
 
-### 二. 系统框架
-
-* Cocoa Touch Layer
-	* [AddressBookUI](./framework/AddressBookUI)
-	* [EventKitUI](./framework/EventKitUI)
-	* [GameKit](./framework/GameKit)
-	* [iAd](./framework/iAd)
-	* [MapKit](./framework/MapKit)
-	* [MessageUI](./framework/MessageUI)
-	* [UIKit](./framework/UIKit)
-	* NotificationCenter
-	* PhotosUI
-	* WatchKit
-* 多媒体层
-	* [AssetsLibrary](./framework/AssetsLibrary)
-	* [AVFoundation](./framework/AVFoundation)
-	* [AudioToolbox](./framework/AudioToolbox)
-	* [AudioUnit](./framework/AudioUnit)
-	* [CoreAudio](./framework/CoreAudio)
-	* [CoreGraphics](./framework/CoreGraphics)
-	* [CoreText](./framework/CoreText)
-	* [CoreVideo](./framework/CoreVideo)
-	* [ImageIO](./framework/ImageIO)
-	* [MediaPlayer](./framework/MediaPlayer)
-	* [OpenAL](./framework/OpenAL)
-	* [OpenGLES](./framework/OpenGLES)
-	* [QuartzCore](./framework/QuartzCore)
-* Core Services Layer
-	* [AddressBook](./framework/AddressBook)
-	* [CFNetwork](./framework/CFNetwork)
-	* [CoreData](./framework/CoreData)
-	* [CoreFoundation](./framework/CoreFoundation)
-	* [CoreLocation](./framework/CoreLocation)
-	* [CoreMedia](./framework/CoreMedia)
-	* [CoreTelephony](./framework/CoreTelephony)
-	* [EventKit](./framework/EventKit)
-	* [Foundation](./framework/Foundation)
-	* [MobileCoreServices](./framework/MobileCoreServices)
-	* [QuickLook](./framework/QuickLook)
-	* [StoreKit](./framework/StoreKit)
-	* [SystemConfiguration](./framework/SystemConfiguration)
-	* [WebKit](./framework/WebKit)
-	* [CloudKit](./framework/CloudKit)
-	* [CoreMotion](./framework/CoreMotion)
-	* [JavascriptCore](./framework/JavaScriptCore)
-	* ACAccounts
-	* AdSupport
-	* HealthKit
-	* HomeKit
-	* MultipeerConnectivity
-	* NewsstandKit
-	* PassKit
-	* PushKit
-	* Social
-	* UIAutomation
-* Core OS Layer
-	* [Accelerate](./framework/Accelerate)
-	* [ExternalAccessory](./framework/ExternalAccessory)
-	* [Security](./framework/Security)
-	* [System](./framework/System)
-	* CoreBluetooth
-	* LocalAuthentication
-
-
-<br>
-***
-<br>
-
-
-### 三. 优质第三方框架/库
+### 二. 优质第三方框架/库
 
 * 语言相关
 	* [libextobjc](https://github.com/jspahrsummers/libextobjc) -- 一个扩展Objective-C的Cocoa库
@@ -274,7 +205,7 @@
 <br>
 
 
-### 四. 优质的Xcode插件
+### 三. 优质的Xcode插件
 
 * [Alcatraz](https://github.com/supermarin/Alcatraz) -- Xcode插件管理器，基于它可以很方便地搜索和管理插件
 * VVDocumenter -- 快速添加代码注释的插件（注：只需在想添加注释的地方输入`///`，即可自动生成注释），可在`Alcatraz`中搜索安装
@@ -283,6 +214,75 @@
 * ObjectGraph -- 绘制类的关系图（需通过brew安装graphviz：`brew install graphviz`），可在`Alcatraz`中搜索安装
 * [InjectionPlugin](https://github.com/johnno1962/injectionforxcode) -- 在不重新打包应用的情况下，实时显示修改结果，极大地提高开发效率，可在`Alcatraz`中搜索安装
 * [KPRunEverywhereXcodePlugin](https://github.com/kitschpatrol/KPRunEverywhereXcodePlugin) -- 在Xcode中一次性将应用打包到多台设备上，可在`Alcatraz`中搜索安装
+
+
+<br>
+***
+<br>
+
+
+### 四. 系统框架
+
+* Cocoa Touch Layer
+	* [AddressBookUI](./framework/AddressBookUI)
+	* [EventKitUI](./framework/EventKitUI)
+	* [GameKit](./framework/GameKit)
+	* [iAd](./framework/iAd)
+	* [MapKit](./framework/MapKit)
+	* [MessageUI](./framework/MessageUI)
+	* [UIKit](./framework/UIKit)
+	* NotificationCenter
+	* PhotosUI
+	* WatchKit
+* 多媒体层
+	* [AssetsLibrary](./framework/AssetsLibrary)
+	* [AVFoundation](./framework/AVFoundation)
+	* [AudioToolbox](./framework/AudioToolbox)
+	* [AudioUnit](./framework/AudioUnit)
+	* [CoreAudio](./framework/CoreAudio)
+	* [CoreGraphics](./framework/CoreGraphics)
+	* [CoreText](./framework/CoreText)
+	* [CoreVideo](./framework/CoreVideo)
+	* [ImageIO](./framework/ImageIO)
+	* [MediaPlayer](./framework/MediaPlayer)
+	* [OpenAL](./framework/OpenAL)
+	* [OpenGLES](./framework/OpenGLES)
+	* [QuartzCore](./framework/QuartzCore)
+* Core Services Layer
+	* [AddressBook](./framework/AddressBook)
+	* [CFNetwork](./framework/CFNetwork)
+	* [CoreData](./framework/CoreData)
+	* [CoreFoundation](./framework/CoreFoundation)
+	* [CoreLocation](./framework/CoreLocation)
+	* [CoreMedia](./framework/CoreMedia)
+	* [CoreTelephony](./framework/CoreTelephony)
+	* [EventKit](./framework/EventKit)
+	* [Foundation](./framework/Foundation)
+	* [MobileCoreServices](./framework/MobileCoreServices)
+	* [QuickLook](./framework/QuickLook)
+	* [StoreKit](./framework/StoreKit)
+	* [SystemConfiguration](./framework/SystemConfiguration)
+	* [WebKit](./framework/WebKit)
+	* [CloudKit](./framework/CloudKit)
+	* [CoreMotion](./framework/CoreMotion)
+	* [JavascriptCore](./framework/JavaScriptCore)
+	* ACAccounts
+	* AdSupport
+	* HealthKit
+	* HomeKit
+	* MultipeerConnectivity
+	* NewsstandKit
+	* PassKit
+	* PushKit
+	* Social
+	* UIAutomation
+* Core OS Layer
+	* [Accelerate](./framework/Accelerate)
+	* [ExternalAccessory](./framework/ExternalAccessory)
+	* [Security](./framework/Security)
+	* [System](./framework/System)
+	* CoreBluetooth
+	* LocalAuthentication
 
 
 <br>
