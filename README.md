@@ -184,6 +184,7 @@
 * 代码组织
 	* [PromiseKit](https://github.com/mxcl/PromiseKit) -- Promise for iOS，支持Objective-C和Swift
 	* [BlocksKit](https://github.com/zwaldowski/BlocksKit) -- 让许多系统类支持Block，简化编码
+	* [Aspects](https://github.com/steipete/Aspects) -- AOP for iOS
 
 * 标签列表
 	* [SKTagView](https://github.com/zsk425/SKTagView)
