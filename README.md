@@ -177,9 +177,8 @@
 * 云端存储
 	* [AliyunOSSiOS](https://github.com/sunyunfei/aliyun-oss-ios-sdk) -- 阿里云OSS iOS SDK
 
-* 应用内置浏览器
+* WebView
 	* [DZNWebViewController](https://github.com/dzenbot/DZNWebViewController) -- 它是一个简单的iPhone & iPad浏览器，功能非常类似于Safari，它基于WebKit构建，拥有导航控件和上下文特性，适合在app内进行web浏览，可以被子类化和扩展，适用iOS8+。
-	* [TOWebViewController](https://github.com/TimOliver/TOWebViewController) -- 基于UIWebView实现
 
 * 代码组织
 	* [PromiseKit](https://github.com/mxcl/PromiseKit) -- Promise for iOS，支持Objective-C和Swift
@@ -223,76 +222,7 @@
 <br>
 
 
-### 四. 系统框架
-
-* Cocoa Touch Layer
-	* [AddressBookUI](./framework/AddressBookUI)
-	* [EventKitUI](./framework/EventKitUI)
-	* [GameKit](./framework/GameKit)
-	* [iAd](./framework/iAd)
-	* [MapKit](./framework/MapKit)
-	* [MessageUI](./framework/MessageUI)
-	* [UIKit](./framework/UIKit)
-	* NotificationCenter
-	* PhotosUI
-	* WatchKit
-* 多媒体层
-	* [AssetsLibrary](./framework/AssetsLibrary)
-	* [AVFoundation](./framework/AVFoundation)
-	* [AudioToolbox](./framework/AudioToolbox)
-	* [AudioUnit](./framework/AudioUnit)
-	* [CoreAudio](./framework/CoreAudio)
-	* [CoreGraphics](./framework/CoreGraphics)
-	* [CoreText](./framework/CoreText)
-	* [CoreVideo](./framework/CoreVideo)
-	* [ImageIO](./framework/ImageIO)
-	* [MediaPlayer](./framework/MediaPlayer)
-	* [OpenAL](./framework/OpenAL)
-	* [OpenGLES](./framework/OpenGLES)
-	* [QuartzCore](./framework/QuartzCore)
-* Core Services Layer
-	* [AddressBook](./framework/AddressBook)
-	* [CFNetwork](./framework/CFNetwork)
-	* [CoreData](./framework/CoreData)
-	* [CoreFoundation](./framework/CoreFoundation)
-	* [CoreLocation](./framework/CoreLocation)
-	* [CoreMedia](./framework/CoreMedia)
-	* [CoreTelephony](./framework/CoreTelephony)
-	* [EventKit](./framework/EventKit)
-	* [Foundation](./framework/Foundation)
-	* [MobileCoreServices](./framework/MobileCoreServices)
-	* [QuickLook](./framework/QuickLook)
-	* [StoreKit](./framework/StoreKit)
-	* [SystemConfiguration](./framework/SystemConfiguration)
-	* [WebKit](./framework/WebKit)
-	* [CloudKit](./framework/CloudKit)
-	* [CoreMotion](./framework/CoreMotion)
-	* [JavascriptCore](./framework/JavaScriptCore)
-	* ACAccounts
-	* AdSupport
-	* HealthKit
-	* HomeKit
-	* MultipeerConnectivity
-	* NewsstandKit
-	* PassKit
-	* PushKit
-	* Social
-	* UIAutomation
-* Core OS Layer
-	* [Accelerate](./framework/Accelerate)
-	* [ExternalAccessory](./framework/ExternalAccessory)
-	* [Security](./framework/Security)
-	* [System](./framework/System)
-	* CoreBluetooth
-	* LocalAuthentication
-
-
-<br>
-***
-<br>
-
-
-### 五. 优质技术资料
+### 四. 优质技术资料
 
 * [iOS Provisioning Profile(Certificate)与Code Signing详解](http://blog.csdn.net/phunxm/article/details/42685597)
 * [漫谈iOS程序的证书和签名机制](http://www.pchou.info/ios/2015/12/14/ios-certification-and-code-sign.html)
@@ -300,8 +230,6 @@
 * [如何使用TestFlight进行Beta测试](http://www.cocoachina.com/ios/20141022/10009.html)
 * [细说 iOS 消息推送](http://www.cocoachina.com/industry/20140528/8582.html)
 * [iOS如何创建推送证书](http://jingyan.baidu.com/article/7082dc1c6bb86de40a89bd1a.html)
-* [Quartz 2D的坐标系和UIKit的坐标系对比以及相互转换](https://www.ganlvji.com/quartz_2d_coordinate_uikit/)
-* [IOS Xcode开发中的文件后缀名区别m,mm,cpp,h](http://www.xuebuyuan.com/2106036.html)
 
 
 <br>
