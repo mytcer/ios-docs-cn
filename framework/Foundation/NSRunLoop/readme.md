@@ -2,7 +2,43 @@
 
 ### 简介
 
-`NSRunLoop`对象处理来自窗口系统的事件（如键盘事件），`NSPort`对象，`NSConnection`对象及`NSTimer`事件。每个`NSThread`对象（包括应用的主线程）都会在需要的时候创建一个`NSRunLoop`对象
+一个runloop就是一个事件处理循环，用来不停的监听和处理输入事件，它能处理的事件有两种：输入源和定时源，输入源包括三种：performSelector源、基于端口（Mach port）的源、以及自定义的源，他们都是用来处理异步事件的；定时源即NSTimer，一般情况下是用来处理同步事件的。
+
+
+***
+<br>
+***
+
+
+### runloop mode
+
+一个runloop mode是一个集合，其中包含其监听的输入事件、定时器事件、以及在事件发生时需要通知的runloop observers。每个runloop可运行在不同的mode下，运行在一种mode下的runloop，只会处理该mode包含的输入事件、定时器事件、以及通知该mode包含的observers。
+
+Cocoa中的预定义模式有:
+
+* `NSDefaultRunLoopMode`
+
+	* 说明：默认模式，它几乎包含了所有输入源（NSConnection除外）。
+
+* `NSConnectionReplyMode`
+
+	* 说明：该模式处理`NSConnection`对象相关事件，表明`NSConnection`对象等待reply，系统内部使用，用户基本不会使用。
+
+* `NSModalPanelRunLoopMode`
+
+	* 说明：用于处理modal panels事件，当需要等待处理的input source为modal panel时设置该模式，比如`NSSavePanel`和`NSOpenPanel`。
+
+* `NSEventTrackingRunLoopMode`
+
+	* 说明：该模式用于处理用户界面相关的事件，在此模式下会限制输入事件的处理。
+
+	* 例子：当手指按住UITableView拖动时就会处于此模式
+
+* `NSRunLoopCommonModes`
+
+	* 说明：这不是一个特定的模式，而是一个模式集合，其默认包含`NSDefaultRunLoopMode`、`NSModalPanelRunLoopMode`、`NSEventTrackingRunLoopMode`。将输入源加入此模式，意味着在该模式集合中包含的所有模式下都可以处理。
+
+	* 注意：可使用`CFRunLoopAddCommonMode`方法向该模式中添加自定义模式
 
 
 ***
@@ -87,19 +123,22 @@
 ***
 <br>
 
-### 三. 关键点
 
-* 每个线程都有唯一的一个与之对应的runloop
+### 注意
+
+* 每个线程都有一个与之对应的runloop
 
 * 主线程中的runloop是默认启动的
 
-* 非主线程在刚创建时并没有runloop，如果你不主动获取，就一直都不会有。
+* 其它线程在刚创建时并没有runloop，如果你不主动获取，就一直都不会有。
 
 * 主线程的runloop可以全局获取，其获取方式为：`[NSRunLoop mainRunLoop]`或`CFRunLoopGetMain()`；非主线程的runloop，只能在该线程内获取，其获取方式为：`[NSRunLoop currentRunLoop]`或`CFRunLoopGetCurrent()`。
 
 * 主线程的runloop在app结束时被销毁，非主线程的runloop在该线程结束时被销毁。
 
-* 在非主线程中创建的timer，想要其生效，必须满足三个条件：
+* 在其它线程中创建的timer，想要其生效，必须满足三个条件：
 	* 将timer添加到该线程的runloop
 	* 保证该线程的runloop已启动
 	* runloop当前的runloopmode要与添加timer时指定的mode一致
+
+* 创建`NSTimer`添加到runloop中的时候，`NSTimer`默认是处于`NSDefaultRunloopMode`。
