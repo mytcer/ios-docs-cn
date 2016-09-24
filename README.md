@@ -3,20 +3,20 @@
 ### 一. 学习笔记
 
 * 语言相关
-	* [类与元类](./articles/类与元类.md)
-	* [属性关键字assign，weak，strong，copy的区别](./articles/属性关键字assign，weak，strong，copy的区别.md)
-	* [定义block属性时为什么要用copy关键字](./articles/定义block属性时为什么要用copy关键字.md)
-	* [const与#define的区别](./articles/const与#define的区别.md)
-	* [宏定义中的#与##操作符](./articles/宏定义中的#与##操作符.md)
+	* [类与元类](./articles/class_and_metaclass.md)
+	* [属性关键字assign，weak，strong，copy的区别](./articles/difference_between_assign_weak_strong_copy_keywords.md)
+	* [定义block属性时为什么要用copy关键字](./articles/why_use_copy_key_attributes_when_define_block.md)
+	* [const与#define的区别](./articles/difference_between_const_and_marco_define.md)
+	* [宏定义中的#与##操作符](./articles/special_operators_in_the_macro_definition.md)
 * 系统相关
-	* [Apple移动设备处理器指令集说明](./articles/Apple移动设备处理器指令集说明.md)
-	* [iOS沙盒机制](./articles/iOS沙盒机制.md)
+	* [Apple移动设备处理器指令集说明](./articles/apple_mobile_device_cpu_instruction_set.md)
+	* [iOS沙盒机制](./articles/ios_sandbox_mechanism.md)
 * runtime
-	* [如何给Category添加属性?](./articles/如何给Category添加属性.md)
+	* [如何给Category添加属性?](./articles/how_to_add_property_for_category.md)
 * UIKit
-	* [iOS应用程序生命周期](./articles/iOS应用程序生命周期.md)
-	* [UIViewController的生命周期](./articles/UIViewController的生命周期.md)
-	* [iOS手势详解](./articles/iOS手势详解.md)
+	* [iOS应用程序生命周期](./articles/ios_application_lifecycle.md)
+	* [UIViewController的生命周期](./articles/uiviewcontroller_lifecycle.md)
+	* [iOS手势详解](./articles/ios_gestures.md)
 
 
 <br>
