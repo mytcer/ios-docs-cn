@@ -13,6 +13,8 @@
 	* [iOS沙盒机制](./Articles/ios_sandbox_mechanism.md)
 * runtime
 	* [如何给Category添加属性?](./Articles/how_to_add_property_for_category.md)
+* Foundation
+	* [NSRunLoop详解](./Articles/nsrunloop.md)
 * UIKit
 	* [iOS应用程序生命周期](./Articles/ios_application_lifecycle.md)
 	* [UIViewController的生命周期](./Articles/uiviewcontroller_lifecycle.md)
