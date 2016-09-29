@@ -14,7 +14,7 @@
 * 多线程
 	* [线程死锁详解](./Articles/multiThread/thread_deadlock.md)
 * runtime
-	* [如何给Category添加属性?](./Articles/how_to_add_property_for_category.md)
+	* [如何给Category添加属性?](./Articles/runtime/how_to_add_property_for_category.md)
 * Foundation
 	* [NSRunLoop详解](./Articles/Foundation/nsrunloop.md)
 * UIKit
