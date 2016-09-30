@@ -22,6 +22,7 @@
 	* [iOS应用程序生命周期](./Articles/UIKit/ios_application_lifecycle.md)
 	* [UIViewController的生命周期](./Articles/UIKit/uiviewcontroller_lifecycle.md)
 	* [iOS手势详解](./Articles/UIKit/ios_gestures.md)
+	* [UIView的frame、bounds、center属性之间的关系](./Articles/UIKit/uiview_frame_bounds_center.md)
 
 
 <br>
