@@ -253,6 +253,35 @@ APP启动后，苹果在主线程RunLoop里注册了两个Observer：
 <br>
 
 
+### 注意
+
+#### 子线程中的RunLoop跑起来后，其后的代码不会执行
+
+```
+// 例子：threadTest方法中的 NSLog(@"log"); 不会执行
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    NSThread *thread = [[NSThread alloc] initWithTarget:self selector:@selector(threadTest) object:nil];
+    [thread start];
+}
+
+- (void)threadTest {
+    [[NSRunLoop currentRunLoop] addPort:[NSPort port] forMode:NSDefaultRunLoopMode];
+    [[NSRunLoop currentRunLoop] run];
+    NSLog(@"log");
+}
+
+@end
+```
+
+<br>
+***
+<br>
+
+
 ### 参考资料
 
 * [深入理解RunLoop](http://www.cocoachina.com/ios/20150601/11970.html)
