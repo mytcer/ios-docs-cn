@@ -14,10 +14,13 @@
 	* [iOS沙盒机制](./Articles/system/ios_sandbox_mechanism.md)
 * 多线程
 	* [线程死锁详解](./Articles/multiThread/thread_deadlock.md)
-* runtime
+* Runtime
 	* [消息转发及其实际应用](./Articles/runtime/message_forwarding.md)
 	* [关联对象及其实际应用](./Articles/runtime/associated_object.md)
 	* [方法交换及其实际应用](./Articles/runtime/method_swizzing.md)
+* 安全
+	* 网络安全
+		* [HTTPS](./Articles/Security/https.md)
 * Foundation
 	* [NSRunLoop详解](./Articles/Foundation/nsrunloop.md)
 * UIKit
@@ -209,6 +212,9 @@
 
 * 日期&时间
 	* [DateTools](https://github.com/MatthewYork/DateTools)
+
+* 异常处理
+	* [AvoidCrash](https://github.com/chenfanfang/AvoidCrash) -- 通过runtime对Foundation中的一些易崩溃的方法进行处理，防止APP发布后出现crash
 
 * 工具
 	* [Reveal](http://revealapp.com) -- APP UI 调试工具，[使用说明](http://www.jianshu.com/p/290af2bf5afb)
