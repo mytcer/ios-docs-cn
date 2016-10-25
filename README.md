@@ -15,6 +15,7 @@
 	* [iOS沙盒机制](./Articles/system/ios_sandbox_mechanism.md)
 * 多线程
 	* [线程死锁详解](./Articles/multiThread/thread_deadlock.md)
+	* [锁的种类及其特点](./Articles/multiThread/lock_detail.md)
 * Runtime
 	* [消息转发及其实际应用](./Articles/runtime/message_forwarding.md)
 	* [关联对象及其实际应用](./Articles/runtime/associated_object.md)
