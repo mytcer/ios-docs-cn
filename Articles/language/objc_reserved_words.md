@@ -47,7 +47,7 @@ NSLog(@"name: %@", _name);
 
 @implementation ViewController
 
-@synthesize name; // 这一句可以不写，编译器会自动加上
+@synthesize name; // 这一句可以不写，编译器会自动加上（默认加上 @synthesize name = _name;）
 
 @end
 
@@ -86,7 +86,7 @@ NSLog(@"name: %@", _name);
 
 ### @dynamic
 
-作用：它用于修饰`@property`，用于生成对应的 **setter** 和 **getter** 方法，但`@ dynamic`表示这个成员变量的 **setter** 和 **getter** 方法并不是直接由编译器生成，而是手工生成或者运行时生成，如
+作用：用于生成对应的 **setter** 和 **getter** 方法，但`@ dynamic`表示这个成员变量的 **setter** 和 **getter** 方法并不是直接由编译器生成，而是手工生成或者运行时生成，如
 
 ```
 @interface ViewController()
