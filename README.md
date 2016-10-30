@@ -17,6 +17,7 @@
 	* [线程死锁详解](./Articles/multiThread/thread_deadlock.md)
 	* [锁的种类及其特点](./Articles/multiThread/lock_detail.md)
 	* [通过NSOperationQueue实现线程依赖](./Articles/multiThread/thread_dependency.md)
+	* [三种多线程技术的对比及使用](./Articles/multiThread/nsthread_nsoperationqueue_gcd.md)
 * Runtime
 	* [消息转发及其实际应用](./Articles/runtime/message_forwarding.md)
 	* [关联对象及其实际应用](./Articles/runtime/associated_object.md)
